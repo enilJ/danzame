@@ -1,0 +1,106 @@
+# Testi della home in italiano.
+# Si possono modificare liberamente; le parti tra <em> e </em> vanno in corsivo.
+title_suffix: Associazione culturale, Acireale
+hero_alt: L'ensemble di Muddica 7 in due linee contrapposte sul palco di Scenario Pubblico, con i musicisti sullo sfondo
+hero_eyebrow: Associazione culturale · Acireale · dal 2003
+hero_h1: Danza come arte in movimento, <em>senza trucco</em>
+intro_label: L'associazione
+intro_lede: 'DANZ@M.E promuove la danza nel territorio acese in tutte le sue declinazioni: <em>performance</em>, residenze coreografiche, camp e workshop.'
+intro_body: Fondata da C. Enrico Musmeci, Premio Aci &amp; Galatea 1997, dopo una carriera nei teatri d'opera di Francia, Italia e Svizzera. Negli anni l'associazione ha prodotto spettacoli con musica dal vivo, performance urbane e danza teatro, e ha costruito scambi internazionali per l'inserimento professionale dei giovani danzatori.
+fact_founded: Fondazione
+fact_recognised: Riconoscimento
+fact_recognised_v: Ministero della Cultura, 2021
+fact_venue: Sede
+feat_eyebrow: In evidenza · Direzione artistica di C. Enrico Musmeci
+feat_tagline: Una piattaforma coreografica d'autore. «Ciò che è estraneo sembra strano».
+poster_alt: Locandina del Mò.DANCEFEST 2026
+poster_cap: Programma 2026
+feat_p1: Il Mò.DANCEFEST seleziona e presenta brevi creazioni di compagnie siciliane emergenti di danza contemporanea e di autori siciliani che lavorano all'estero. I pezzi sono inediti o estratti rielaborati di coreografie recenti, pensati per far conoscere al pubblico gli stili e le tendenze della danza di oggi.
+feat_p2: Il festival è ideato e organizzato da DANZ@M.E e si svolge nella sala dell'associazione, La Pépinière. Accanto alle serate di spettacolo ci sono masterclass, laboratori coreografici e residenze, che si chiudono con una restituzione aperta al pubblico.
+perf: Performance
+lab: Laboratorio
+showing: Restituzione delle residenze
+partners: 'Partner:'
+patronage: Con il patrocinio del Comune di Acireale.
+slot_title: Le foto dell'edizione {anno}
+slot_note: in arrivo
+past_editions: Edizioni precedenti
+poster_word: Locandina Mò.DANCEFEST
+recent_h: Lavori recenti
+photo_soon: Foto in arrivo
+all_archive: 'Tutto l''archivio: [[n_works]] lavori dal 1991 →'
+portrait_alt: Ritratto di C. Enrico Musmeci
+bio_roles: Danzatore · coreografo · maestro
+bio_p1: Nato a Catania il 4 luglio 1964, inizia a studiare danza classica a nove anni, tra Acireale e Catania. Nel 1983 si trasferisce in Francia per il biennio professionale al Centre de Danse International Rosella Hightower di Cannes.
+bio_p2: Seguono quindici anni nei teatri d'opera di Francia, Italia e Svizzera, dove danza il repertorio di Petipa, Balanchine, Bournonville e Cranko e lavora con coreografi come Uwe Scholz, Peter Schaufuss e John Clifford. A Zurigo firma le prime coreografie; nel 1995 fonda la ORMA Dance Company.
+bio_p3: Dal 1995 collabora con Roberto Zappalà. Tornato in Sicilia nel 2010, dirige i corsi MoDem Pro e la CZD2 a Scenario Pubblico, e con DANZ@M.E porta ad Acireale workshop, residenze e il Mò.DANCEFEST.
+studied_with: Studia con
+from_archive: Dall'archivio
+alb0_alt: Enrico bambino alla sbarra con altre allieve
+alb0_cap: A nove anni, i primi studi
+alb1_alt: 'Foto di scena d''archivio: un corpo di ballo maschile in arabesque'
+alb2_alt: 'Foto di scena d''archivio in bianco e nero: un danzatore in salto'
+alb3_alt: 'Foto d''archivio in bianco e nero: un danzatore in arabesque in sala prove'
+alb4_alt: 'Foto d''archivio in bianco e nero: un danzatore in costume con gonna a balze'
+seasons_h: Stagioni
+seasons:
+- anno: '1983'
+  luogo: Cannes
+  teatro: Centre Rosella Hightower
+  testo: Biennio professionale di formazione classica e moderna.
+- anno: '1985'
+  luogo: Nizza · Avignone · Nancy
+  teatro: Opéra de Nice, Opéra d'Avignon, Ballet de Nancy
+  testo: Primi contratti nelle compagnie d'opera francesi.
+- anno: '1986'
+  luogo: Europa · Stati Uniti
+  teatro: Ballet Théâtre Populaire en Liberté, Ballet de France
+  testo: Tournée europea e, nel 1987, negli Stati Uniti con il Ballet de France di Parigi.
+- anno: '1987'
+  luogo: Torino
+  teatro: Teatro Regio
+  testo: Una stagione nel corpo di ballo.
+- anno: '1988'
+  luogo: Zurigo
+  teatro: Balletto dell'Opernhaus, dir. Uwe Scholz
+  testo: Quattro stagioni. Dal 1990 crea le sue prime coreografie per l'Opera.
+- anno: '1992'
+  luogo: Lucerna
+  teatro: Stadttheater
+  testo: Due stagioni come danzatore e coreografo; nel 1993 firma una coreografia con orchestra.
+- anno: '1995'
+  luogo: Zurigo
+  teatro: ORMA Dance Company
+  testo: Fonda e dirige la compagnia, sostenuta da Città e Cantone di Zurigo. Oltre dieci creazioni in tournée tra Germania, Francia, Mauritius, Italia e Liechtenstein fino al 2000.
+- anno: '2010'
+  luogo: Catania · Acireale
+  teatro: Scenario Pubblico, DANZ@M.E
+  testo: Rientro in Sicilia. Dal 2012 direttore didattico dei corsi MoDem Pro e della CZD2; assistente di Roberto Zappalà per Fra Diavolo all'Opera di Roma (2017) e al Teatro Massimo di Palermo (2018).
+awards_h: Riconoscimenti
+awards:
+- anno: 1991–94
+  testo: Quattro volte finalista al Concorso Coreografico Internazionale di Hannover
+- anno: '1994'
+  testo: 2° Premio, Genzano di Roma
+- anno: '1995'
+  testo: Finalista al Prix Volinine, Parigi
+- anno: '1997'
+  testo: Premio Aci &amp; Galatea, Acireale
+- anno: '1997'
+  testo: Selezionato al 1° SiWiC, Swiss International Coaching Project for Choreographers
+- anno: '1998'
+  testo: Piattaforma svizzera delle Rencontres Chorégraphiques Internationales de Seine-Saint-Denis
+stage_with_h: In scena con
+jury_h: In giuria
+juries:
+- anno: '2019'
+  testo: Concorso Città di Verona
+- anno: '2021'
+  testo: Premio Internazionale Prospettiva Danza Teatro, Padova
+- anno: '2023'
+  testo: Teatri Riflessi, Zafferana Etnea
+- anno: 2023–26
+  testo: Comitato direttivo InciDanse, Friburgo
+f_venue: Sede
+italy: Italia
+footer_mic: Riconosciuta dal Ministero della Cultura

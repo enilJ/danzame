@@ -1,0 +1,215 @@
+<title>danz@m.e · [[title_suffix]]</title>
+[[hreflang]]
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+[[css]]
+<style>
+.langs{display:flex;gap:2px;margin-left:clamp(4px,1vw,12px);padding-left:clamp(10px,1.6vw,20px);border-left:1px solid var(--rule)}
+.langs a{font-family:var(--mono);font-size:12px!important;letter-spacing:.06em;text-transform:uppercase;padding:2px 4px}
+.langs a[aria-current]{color:var(--ink)}
+
+/* festival in evidenza */
+.feat{background:var(--paper-2)}
+.feat-head{display:grid;gap:14px;margin-bottom:clamp(32px,5vw,56px)}
+.feat-name{font-family:var(--sans);font-weight:600;font-size:clamp(34px,9.4vw,132px);letter-spacing:-.045em;line-height:.9;white-space:nowrap}
+.feat-name i{font-style:normal;color:var(--accent)}
+.feat-meta{display:flex;flex-wrap:wrap;gap:6px 28px;font-size:15px}
+.feat-meta b{font-weight:600}
+.feat .tagline{font-family:var(--display);font-style:italic;font-size:clamp(22px,2.4vw,28px);color:var(--muted);max-width:40ch}
+.fest-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,72px);align-items:start}
+@media (max-width:860px){.fest-grid{grid-template-columns:1fr}}
+.poster{margin:0;box-shadow:0 18px 40px -22px rgba(10,12,20,.55)}
+.poster figcaption{margin-top:12px}
+.day{display:grid;grid-template-columns:88px minmax(0,1fr);gap:16px;padding-block:18px;border-bottom:1px solid var(--rule)}
+.days{display:grid;margin-top:28px;border-top:1px solid var(--ink)}
+.day .d{font-family:var(--display);font-size:44px;line-height:.9}
+.day .d small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.day h4{margin:0 0 6px;font-size:13px;font-family:var(--mono);font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.day p{font-size:15px}
+.day ul{list-style:none;margin:8px 0 0;padding:0;font-size:15px;columns:2;column-gap:24px}
+@media (max-width:560px){.day ul{columns:1}}
+.day li{padding-block:2px;break-inside:avoid}
+.day li span{color:var(--muted)}
+.photo-slot{margin-top:clamp(40px,6vw,64px);border:1px dashed var(--muted);padding:clamp(24px,4vw,40px);display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between;background:repeating-linear-gradient(135deg,transparent 0 14px,color-mix(in srgb,var(--rule) 55%,transparent) 14px 15px)}
+.fest-gallery{margin-top:clamp(40px,6vw,64px);column-count:3;column-gap:clamp(8px,1.2vw,16px)}
+@media (max-width:760px){.fest-gallery{column-count:2}}
+.fest-gallery figure{margin:0 0 clamp(8px,1.2vw,16px);break-inside:avoid}
+.fest-gallery img{width:100%;height:auto}
+.photo-slot p{font-family:var(--display);font-size:clamp(22px,2.4vw,28px)}
+.partners{margin-top:28px;font-size:14px;color:var(--muted)}
+.partners b{color:var(--ink);font-weight:500}
+.archive{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:14px}
+@media (max-width:640px){.archive{grid-template-columns:1fr}}
+.archive figure{margin:0;display:grid;gap:10px}
+.archive .th{aspect-ratio:16/9;overflow:hidden;background:var(--paper)}
+.archive img{width:100%;height:100%;object-fit:cover}
+.archive figcaption{display:flex;justify-content:space-between;gap:8px;font-size:14px}
+.archive figcaption span:first-child{font-weight:600}
+
+/* lavori recenti */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,36px) clamp(12px,2vw,24px)}
+@media (max-width:860px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+.card{display:grid;gap:12px;text-decoration:none}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--paper-2)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.card:hover img{transform:scale(1.03)}
+.card .nophoto{display:grid;place-items:center;border:1px dashed var(--muted);background:repeating-linear-gradient(135deg,transparent 0 14px,color-mix(in srgb,var(--rule) 55%,transparent) 14px 15px)}
+.card .t{font-family:var(--display);font-size:clamp(22px,2.2vw,28px);line-height:1.1}
+.card:hover .t{color:var(--accent)}
+.card .m{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.works-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+</style>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top">danz<b>@</b>m.e</a>
+    <nav class="nav" aria-label="[[nav_label]]">
+      <a href="coreografie.html">[[nav_works]]</a>
+      <a href="#festival">[[nav_fest]]</a>
+      <a href="#biografia">[[nav_bio]]</a>
+      <a class="opt" href="#contatti">[[nav_contact]]</a>
+      [[langswitch]]
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <img src="[[r]]img/home/apertura.jpg" alt="[[hero_alt]]">
+    <span class="credit">Muddica 7 · Scenario Pubblico, 2023</span>
+    <div class="hero-copy">
+      <div class="wrap">
+        <span class="label">[[hero_eyebrow]]</span>
+        <h1>[[hero_h1]]</h1>
+      </div>
+    </div>
+  </div>
+
+  <section class="intro">
+    <div class="wrap row">
+      <span class="label">[[intro_label]]</span>
+      <div>
+        <p class="lede">[[intro_lede]]</p>
+        <div class="prose muted" style="margin-top:24px"><p>[[intro_body]]</p></div>
+        <dl class="facts">
+          <div><dt>[[fact_founded]]</dt><dd>2003, Acireale</dd></div>
+          <div><dt>[[fact_recognised]]</dt><dd>[[fact_recognised_v]]</dd></div>
+          <div><dt>[[fact_venue]]</dt><dd>Sala La Pépinière</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="festival" class="feat">
+    <div class="wrap">
+      <div class="feat-head">
+        <span class="label">[[feat_eyebrow]]</span>
+        <h2 class="feat-name">Mò<i>.</i>DANCEFEST</h2>
+        <div class="feat-meta"><span><b>[[fest_edition]]</b></span><span>[[fest_dates]]</span><span>Sala La Pépinière, Acireale</span></div>
+        <p class="tagline">[[feat_tagline]]</p>
+      </div>
+
+      <div class="fest-grid">
+        <figure class="poster">
+          <img loading="lazy" src="[[r]]img/festival/[[fest_poster]]" alt="[[poster_alt]]">
+          <figcaption class="label">[[poster_cap]]</figcaption>
+        </figure>
+        <div>
+          <div class="prose">
+            <p>[[feat_p1]]</p>
+            <p>[[feat_p2]]</p>
+          </div>
+          [[fest_days]]
+          [[fest_partners]]
+        </div>
+      </div>
+
+      [[fest_photos]]
+
+      <div style="margin-top:clamp(48px,7vw,80px)">
+        <span class="label">[[past_editions]]</span>
+        <div class="archive">
+          [[fest_past]]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="coreografie">
+    <div class="wrap">
+      <div class="works-head">
+        <h2 class="h2">[[recent_h]]</h2>
+        <a class="more" href="coreografie.html">[[all_archive]]</a>
+      </div>
+      <div class="cards">
+        [[cards]]
+      </div>
+    </div>
+  </section>
+
+  <section id="biografia">
+    <div class="wrap">
+      <div class="bio-top">
+        <figure class="portrait-img"><img src="[[r]]img/biografia/ritratto.jpg" width="1200" height="1505" alt="[[portrait_alt]]"><figcaption class="label" style="margin-top:10px">Ph. Woland.photo</figcaption></figure>
+        <div>
+          <h2 class="bio-name"><small>[[bio_roles]]</small>C. Enrico Musmeci</h2>
+          <div class="prose" style="margin-top:28px">
+            <p>[[bio_p1]]</p>
+            <p>[[bio_p2]]</p>
+            <p>[[bio_p3]]</p>
+          </div>
+          <p class="teachers"><span class="label" style="display:block;margin-bottom:6px">[[studied_with]]</span>Rosella Hightower, José Ferran, Claudine Winzer, Arlette Castanier, Monet Robier, Nora Kiss, Daniel Frank, Max Bozzoni, Gilbert Mayer, Raymond Franchetti, Mme Arlein, Jacqueline Finnaert, Margarita Trayanova.</p>
+        </div>
+      </div>
+
+      <div class="album">
+        <span class="label" style="display:block;margin-bottom:14px">[[from_archive]]</span>
+        <div class="album-row">
+          <figure><img loading="lazy" src="[[r]]img/biografia/enrico-9-anni.jpg" alt="[[alb0_alt]]"><figcaption>[[alb0_cap]]</figcaption></figure>
+          <figure><img loading="lazy" src="[[r]]img/biografia/archivio-1.jpg" alt="[[alb1_alt]]"></figure>
+          <figure><img loading="lazy" src="[[r]]img/biografia/archivio-2.jpg" alt="[[alb2_alt]]"></figure>
+          <figure><img loading="lazy" src="[[r]]img/biografia/archivio-3.jpg" alt="[[alb3_alt]]"></figure>
+          <figure><img loading="lazy" src="[[r]]img/biografia/archivio-4.jpg" alt="[[alb4_alt]]"></figure>
+        </div>
+      </div>
+
+      <div class="seasons">
+        <h3>[[seasons_h]]</h3>
+        [[seasons]]
+      </div>
+
+      <div class="cols">
+        <div>
+          <h3>[[awards_h]]</h3>
+          <ul class="list">[[awards]]</ul>
+        </div>
+        <div>
+          <h3>[[stage_with_h]]</h3>
+          <p class="names"><b>Élisabeth Platel</b>, Silviane Bayard, <b>Vladimir Klos</b>, <b>Birgit Keil</b>, Vladimir Derevianko, <b>Patrick Dupond</b>, <b>Fernando Bujones</b>, Peter Schaufuss, <b>Elisabetta Terabust</b>, Richard Cragun, Raffaele Paganini, <b>Julio Bocca</b>.</p>
+          <h3 style="margin-top:36px">[[jury_h]]</h3>
+          <ul class="list">[[juries]]</ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contatti">
+  <div class="wrap">
+    <div class="grid">
+      <p class="motto">[[motto]]</p>
+      <div>
+        <span class="label">[[f_venue]]</span>
+        <p>Sala La Pépinière<br>Via Caronia, 2<br>95024 Acireale (CT), [[italy]]</p>
+      </div>
+      <div>
+        <span class="label">[[nav_contact]]</span>
+        <p class="sel">enricomusmeci@virgilio.it</p>
+        <p class="sel">+39 380 722 9720</p>
+      </div>
+    </div>
+    <div class="base"><span>[[footer_assoc]]</span><span>[[footer_mic]]</span></div>
+  </div>
+</footer>

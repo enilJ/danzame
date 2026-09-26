@@ -1,0 +1,27 @@
+# Modello per una nuova coreografia.
+# 1. Crea un nuovo file in questa cartella con un nome corto, minuscolo e senza spazi,
+#    per esempio: unerwartete-materie.yml (il nome diventa l'indirizzo della scheda).
+# 2. Copia qui sotto, compila i campi e cancella quelli che non servono.
+# I file che iniziano con _ (come questo) non vengono pubblicati.
+
+titolo: Titolo della coreografia
+anno: 2027                      # anno della prima, solo il numero
+luogo: Sicilia                  # Svizzera, Sicilia oppure Altrove (per filtri e grafico)
+prima: 12 marzo 2027, Scenario Pubblico, CT
+organico: 10 danzatori
+compagnia: MoDem PRO
+musica: Nome Compositore, Altro Compositore
+repliche:                       # passate e future insieme: il sito le divide da solo
+  - 13 marzo 2027, Scenario Pubblico, CT
+citazioni:
+  - testo: Testo della recensione, nella lingua originale.
+    fonte: Nome del giornale
+    traduzione_en: Traduzione inglese (facoltativa)
+    traduzione_fr: Traduction française (facultative)
+note:
+  - Una nota libera
+foto:                           # file da caricare in img/coreografie/
+  - file: titolo-01.jpg
+    credito: Nome Fotografo
+in_home: true                   # true per mostrarla tra i lavori recenti in home (al massimo 6, i più recenti)
+luogo_breve: Scenario Pubblico  # cosa scrivere sotto il titolo in home

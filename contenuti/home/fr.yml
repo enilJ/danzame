@@ -1,0 +1,105 @@
+# Textes de la page d'accueil en français.
+title_suffix: Association culturelle, Acireale
+hero_alt: L'ensemble de Muddica 7 en deux lignes face à face sur la scène de Scenario Pubblico, les musiciens au fond
+hero_eyebrow: Association culturelle · Acireale, Sicile · depuis 2003
+hero_h1: La danse comme art en mouvement, <em>sans maquillage</em>
+intro_label: L'association
+intro_lede: 'DANZ@M.E fait vivre la danse sous toutes ses formes à Acireale et dans sa région : <em>performances</em>, résidences chorégraphiques, stages et ateliers.'
+intro_body: Elle a été fondée par C. Enrico Musmeci, Prix Aci &amp; Galatea 1997, après une carrière dans les maisons d'opéra de France, d'Italie et de Suisse. Au fil des années, l'association a produit des spectacles avec musique live, des performances urbaines et de la danse-théâtre, et a noué des échanges internationaux pour l'insertion professionnelle des jeunes danseurs.
+fact_founded: Création
+fact_recognised: Reconnaissance
+fact_recognised_v: Ministère italien de la Culture, 2021
+fact_venue: Lieu
+feat_eyebrow: 'À la une · Direction artistique : C. Enrico Musmeci'
+feat_tagline: Une plateforme chorégraphique d'auteur. « Ce qui est étranger semble étrange. »
+poster_alt: Affiche du Mò.DANCEFEST 2026
+poster_cap: Programme 2026
+feat_p1: Le Mò.DANCEFEST sélectionne et présente de courtes pièces de jeunes compagnies siciliennes de danse contemporaine et de chorégraphes siciliens installés à l'étranger. Les œuvres sont inédites ou des extraits retravaillés de créations récentes, choisis pour faire découvrir au public les styles et les tendances de la danse d'aujourd'hui.
+feat_p2: Le festival est conçu et organisé par DANZ@M.E et se déroule dans la salle de l'association, La Pépinière. Autour des soirées de spectacle, il propose des masterclasses, des laboratoires chorégraphiques et des résidences, qui se terminent par une présentation publique.
+perf: Spectacles
+lab: Laboratoire
+showing: Présentation des résidences
+partners: 'Partenaires :'
+patronage: Avec le soutien de la Ville d'Acireale.
+slot_title: Les photos de l'édition {anno}
+slot_note: bientôt en ligne
+past_editions: Éditions précédentes
+poster_word: Affiche Mò.DANCEFEST
+recent_h: Créations récentes
+photo_soon: Photos bientôt en ligne
+all_archive: 'Toutes les archives : [[n_works]] créations depuis 1991 →'
+portrait_alt: Portrait de C. Enrico Musmeci
+bio_roles: Danseur · chorégraphe · pédagogue
+bio_p1: Né à Catane le 4 juillet 1964, il commence la danse classique à neuf ans, entre Acireale et Catane. En 1983, il part en France pour le cycle professionnel de deux ans du Centre de Danse International Rosella Hightower à Cannes.
+bio_p2: Suivent quinze années dans les maisons d'opéra de France, d'Italie et de Suisse. Il danse le répertoire de Petipa, Balanchine, Bournonville et Cranko et travaille avec des chorégraphes comme Uwe Scholz, Peter Schaufuss et John Clifford. Il signe ses premières chorégraphies à Zurich et fonde en 1995 l'ORMA Dance Company.
+bio_p3: Il collabore avec Roberto Zappalà depuis 1995. De retour en Sicile en 2010, il dirige les cours MoDem Pro et la CZD2 à Scenario Pubblico, à Catane, et avec DANZ@M.E fait venir à Acireale ateliers, résidences et le Mò.DANCEFEST.
+studied_with: Formé auprès de
+from_archive: Archives
+alb0_alt: Enrico enfant à la barre avec d'autres élèves
+alb0_cap: À neuf ans, les premiers cours
+alb1_alt: 'Photo de scène d''archive : un corps de ballet masculin en arabesque'
+alb2_alt: 'Photo de scène d''archive en noir et blanc : un danseur en saut'
+alb3_alt: 'Photo d''archive en noir et blanc : un danseur en arabesque en studio'
+alb4_alt: 'Photo d''archive en noir et blanc : un danseur en costume à jupe à volants'
+seasons_h: Saisons
+seasons:
+- anno: '1983'
+  luogo: Cannes
+  teatro: Centre Rosella Hightower
+  testo: Cycle professionnel de deux ans en danse classique et moderne.
+- anno: '1985'
+  luogo: Nice · Avignon · Nancy
+  teatro: Opéra de Nice, Opéra d'Avignon, Ballet de Nancy
+  testo: Premiers contrats dans les ballets des opéras français.
+- anno: '1986'
+  luogo: Europe · États-Unis
+  teatro: Ballet Théâtre Populaire en Liberté, Ballet de France
+  testo: Tournée européenne puis, en 1987, aux États-Unis avec le Ballet de France de Paris.
+- anno: '1987'
+  luogo: Turin
+  teatro: Teatro Regio
+  testo: Une saison dans le corps de ballet.
+- anno: '1988'
+  luogo: Zurich
+  teatro: Ballet de l'Opernhaus, dir. Uwe Scholz
+  testo: Quatre saisons. Dès 1990, il crée ses premières chorégraphies pour l'Opéra.
+- anno: '1992'
+  luogo: Lucerne
+  teatro: Stadttheater
+  testo: Deux saisons comme danseur et chorégraphe ; en 1993, il signe une pièce avec orchestre.
+- anno: '1995'
+  luogo: Zurich
+  teatro: ORMA Dance Company
+  testo: Il fonde et dirige la compagnie, soutenue par la Ville et le Canton de Zurich. Plus de dix créations, en tournée en Allemagne, en France, à l'île Maurice, en Italie et au Liechtenstein jusqu'en 2000.
+- anno: '2010'
+  luogo: Catane · Acireale
+  teatro: Scenario Pubblico, DANZ@M.E
+  testo: Retour en Sicile. Depuis 2012, directeur pédagogique de MoDem Pro et de la CZD2 ; assistant de Roberto Zappalà pour Fra Diavolo à l'Opéra de Rome (2017) et au Teatro Massimo de Palerme (2018).
+awards_h: Distinctions
+awards:
+- anno: 1991–94
+  testo: Quatre fois finaliste du Concours international de chorégraphie de Hanovre
+- anno: '1994'
+  testo: 2e Prix, Genzano di Roma
+- anno: '1995'
+  testo: Finaliste du Prix Volinine, Paris
+- anno: '1997'
+  testo: Prix Aci &amp; Galatea, Acireale
+- anno: '1997'
+  testo: Sélectionné pour le 1er SiWiC, Swiss International Coaching Project for Choreographers
+- anno: '1998'
+  testo: Plateforme suisse des Rencontres chorégraphiques internationales de Seine-Saint-Denis
+stage_with_h: Sur scène avec
+jury_h: Jurys
+juries:
+- anno: '2019'
+  testo: Concours Città di Verona
+- anno: '2021'
+  testo: Prix international Prospettiva Danza Teatro, Padoue
+- anno: '2023'
+  testo: Teatri Riflessi, Zafferana Etnea
+- anno: 2023–26
+  testo: Comité directeur d'InciDanse, Fribourg
+f_venue: Lieu
+italy: Italie
+footer_mic: Reconnue par le ministère italien de la Culture
