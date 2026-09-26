@@ -293,6 +293,41 @@ def pagina_coreografie(lang, works):
     return out.replace("</body>", MANTIENI_SCHEDA + "\n</body>")
 
 
+def pagina_404():
+    """Pagina per gli indirizzi inesistenti: rimanda i vecchi link di WordPress alle pagine nuove."""
+    vecchi = carica(ROOT / "contenuti" / "vecchi-indirizzi.yml")
+    mappa = {str(k).rstrip("/") + "/": str(v or "") for k, v in vecchi.items()}
+    return f"""<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>danz@m.e</title>
+<script>
+(function(){{
+  var mappa = {json.dumps(mappa, ensure_ascii=False)};
+  var p = location.pathname, base = "/";
+  var m = p.match(/^\/[^\/]+\//);
+  if (m && location.hostname.endsWith("github.io")) {{ base = m[0]; p = "/" + p.slice(base.length); }}
+  if (!p.endsWith("/")) p += "/";
+  if (p in mappa) location.replace(base + mappa[p]);
+}})();
+</script>
+<style>
+body{{margin:0;min-height:100vh;display:grid;place-items:center;background:#F2F3F6;color:#12141A;font-family:Georgia,serif;padding:24px;text-align:center}}
+h1{{font-weight:400;font-size:40px;margin:0 0 12px}} p{{font-family:system-ui,sans-serif;color:#5A6072}} a{{color:#2436D2}}
+@media (prefers-color-scheme:dark){{body{{background:#0D0F15;color:#ECEEF3}} p{{color:#959CAE}} a{{color:#8492FF}}}}
+</style>
+</head>
+<body>
+<div><h1>Pagina non trovata</h1><p>Page not found · Page introuvable</p><p><a id="home" href="/">danz@m.e</a></p></div>
+<script>if(location.hostname.endsWith("github.io")){{var b=location.pathname.match(/^\/[^\/]+\//);if(b)document.getElementById("home").href=b[0];}}</script>
+</body>
+</html>
+"""
+
+
 def main():
     anteprima = "--anteprima" in sys.argv
     if OUT.exists():
@@ -325,6 +360,7 @@ def main():
         + "".join(f"  <url><loc>{u}</loc><lastmod>{oggi}</lastmod></url>\n" for u in pagine) + "</urlset>\n")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
     (OUT / ".nojekyll").write_text("")
+    (OUT / "404.html").write_text(pagina_404(), encoding="utf-8")
     print(f"Sito generato in _site/: {len(works)} coreografie, {len(dimensioni)} immagini, 3 lingue.")
 
 
