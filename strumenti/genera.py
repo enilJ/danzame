@@ -228,7 +228,7 @@ def festival_html(fest, lang, t, r):
     else:
         photos = f'<div class="photo-slot"><p>{t["slot_title"].replace("{anno}", str(fest.get("anno", "")))}</p><span class="label">{t["slot_note"]}</span></div>'
     past = "".join(
-        f'<figure><div class="th"><img loading="lazy" src="{r}img/festival/{e["locandina"]}" alt="{t["poster_word"]} {e["anno"]}"></div>'
+        f'<figure><a class="th" href="{r}img/festival/{e["locandina"]}" target="_blank" rel="noopener"><img loading="lazy" src="{r}img/festival/{e["locandina"]}" alt="{t["poster_word"]} {e["anno"]}"></a>'
         f'<figcaption><span>{e["anno"]}</span><span class="muted">{html.escape(L(e.get("didascalia"), lang))}</span></figcaption></figure>'
         for e in fest.get("edizioni_precedenti") or [])
     return days, partners, photos, past

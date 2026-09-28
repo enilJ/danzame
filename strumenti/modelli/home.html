@@ -40,13 +40,14 @@
 .photo-slot p{font-family:var(--display);font-size:clamp(22px,2.4vw,28px)}
 .partners{margin-top:28px;font-size:14px;color:var(--muted)}
 .partners b{color:var(--ink);font-weight:500}
-.archive{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:14px}
-@media (max-width:640px){.archive{grid-template-columns:1fr}}
+.archive{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,40%),1fr));gap:16px;margin-top:14px}
 .archive figure{margin:0;display:grid;gap:10px}
-.archive .th{aspect-ratio:16/9;overflow:hidden;background:var(--paper)}
-.archive img{width:100%;height:100%;object-fit:cover}
+.archive .th{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--paper)}
+.archive img{width:100%;height:100%;object-fit:cover;object-position:50% 0;transition:transform .4s}
+.archive a.th:hover img{transform:scale(1.03)}
 .archive figcaption{display:flex;justify-content:space-between;gap:8px;font-size:14px}
 .archive figcaption span:first-child{font-weight:600}
+@media (max-width:640px){.archive{grid-template-columns:repeat(2,minmax(0,1fr))}.archive figcaption{flex-direction:column;gap:2px}}
 
 /* lavori recenti */
 .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,36px) clamp(12px,2vw,24px)}
