@@ -221,7 +221,7 @@ def festival_html(fest, lang, t, r):
             if not (ROOT / rel).exists():
                 errori.append(f"festival.yml: la foto {f['file']} non è nella cartella img/festival/")
                 continue
-            figs.append(f'<figure><img loading="lazy" src="{r}{rel}" alt="Mò.DANCEFEST {fest.get("anno", "")}"></figure>')
+            figs.append(f'<figure><a href="{r}{rel}" target="_blank" rel="noopener"><img loading="lazy" src="{r}{rel}" alt="Mò.DANCEFEST {fest.get("anno", "")}, {len(figs) + 1}"></a></figure>')
         crediti = sorted({f.get("credito") for f in foto if isinstance(f, dict) and f.get("credito")})
         photos = f'<div class="fest-gallery">{"".join(figs)}</div>' + (
             f'<p class="label photo-credit">{WORKS_UI[lang]["photo"]}: {html.escape(", ".join(crediti))}</p>' if crediti else "")

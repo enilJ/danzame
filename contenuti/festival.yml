@@ -54,8 +54,17 @@ giorni:
 partner: InciDanse (Fribourg), IterCulture, platz14, GEMA, Viagrande Studios, Ballet Studio.
 
 # Foto dell'edizione in evidenza (file in img/festival/). Finché è vuoto compare "in arrivo".
-foto: []
-#  - {file: 2026-01.jpg, credito: Nome Fotografo}
+foto:
+  - {file: 2026-01.jpg}
+  - {file: 2026-02.jpg}
+  - {file: 2026-03.jpg}
+  - {file: 2026-04.jpg}
+  - {file: 2026-05.jpg}
+  - {file: 2026-06.jpg}
+  - {file: 2026-07.jpg}
+  - {file: 2026-08.jpg}
+  - {file: 2026-09.jpg}
+#  per aggiungere il fotografo: - {file: 2026-01.jpg, credito: Nome Fotografo}
 
 edizioni_precedenti:
   - anno: 2025
