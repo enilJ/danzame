@@ -237,6 +237,11 @@ def festival_html(fest, lang, t, r):
 def pagina_home(lang, works, fest):
     t = carica(ROOT / "contenuti" / "home" / f"{lang}.yml")
     t_it = carica(ROOT / "contenuti" / "home" / "it.yml")
+    if errori:
+        print("Da correggere prima di pubblicare:")
+        for e in errori:
+            print("  -", e)
+        sys.exit(1)
     t = {**t_it, **t}
     c = COMMON[lang]
     r = prefisso(lang)

@@ -39,10 +39,14 @@ studied_with: Trained with
 from_archive: From the archive
 alb0_alt: Enrico as a child at the barre with other pupils
 alb0_cap: Aged nine, his first lessons
-alb1_alt: 'Archive stage photo: a male corps de ballet in arabesque'
-alb2_alt: 'Black and white archive stage photo: a dancer in a leap'
-alb3_alt: 'Black and white archive photo: a dancer in arabesque in the studio'
-alb4_alt: 'Black and white archive photo: a dancer in a costume with a ruffled skirt'
+alb1_alt: 'Un ballo in maschera at the Teatro Regio, Turin: the male corps de ballet in arabesque'
+alb1_cap: 'Teatro Regio, Turin: Un ballo in maschera'
+alb2_alt: Enrico in a leap with the Lucerne Stadttheater Ballet
+alb2_cap: Lucerne Stadttheater Ballet
+alb3_alt: Enrico in arabesque in the studio at the Zurich Opera House
+alb3_cap: Zurich Opera House, in the studio
+alb4_alt: A dancer in a ruffled costume in Corners of the Earth, ORMA Dance Company
+alb4_cap: ORMA Dance Company, Corners of the Earth
 seasons_h: Seasons
 seasons:
 - anno: '1983'

@@ -40,10 +40,14 @@ studied_with: Studia con
 from_archive: Dall'archivio
 alb0_alt: Enrico bambino alla sbarra con altre allieve
 alb0_cap: A nove anni, i primi studi
-alb1_alt: 'Foto di scena d''archivio: un corpo di ballo maschile in arabesque'
-alb2_alt: 'Foto di scena d''archivio in bianco e nero: un danzatore in salto'
-alb3_alt: 'Foto d''archivio in bianco e nero: un danzatore in arabesque in sala prove'
-alb4_alt: 'Foto d''archivio in bianco e nero: un danzatore in costume con gonna a balze'
+alb1_alt: 'Un ballo in maschera al Teatro Regio di Torino: il corpo di ballo maschile in arabesque'
+alb1_cap: Teatro Regio di Torino, Un ballo in maschera
+alb2_alt: Enrico in salto con il balletto dello Stadttheater di Lucerna
+alb2_cap: Balletto dello Stadttheater di Lucerna
+alb3_alt: Enrico in arabesque in sala prove all'Opernhaus di Zurigo
+alb3_cap: Opernhaus di Zurigo, in sala
+alb4_alt: Un danzatore in costume con gonna a balze in Corners of the Earth, ORMA Dance Company
+alb4_cap: ORMA Dance Company, Corners of the Earth
 seasons_h: Stagioni
 seasons:
 - anno: '1983'
