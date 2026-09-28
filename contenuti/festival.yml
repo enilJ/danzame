@@ -23,7 +23,7 @@ giorni:
       - {nome: Melania Caggegi, da: Linguaglossa}
       - {nome: Annalisa Di Lanno / GEMA C.C., da: Catania}
       - {nome: "Maria Stella Pitarresi, Marco Pergallini / platz14", da: Palermo}
-      - {nome: Raffaella Crapio, da: Acireale}
+      - {nome: Raffaella Crapio, da: {it: Barcellona, en: Barcelona, fr: Barcelone}}
       - {nome: "Rafael Smadja, Ernesto Marquez", da: {it: Francia, en: France, fr: France}}
   - giorno: 23
     nome: {it: sabato, en: Saturday, fr: samedi}
@@ -37,7 +37,7 @@ giorni:
       - {nome: Agnese Canicattì, da: Agrigento}
       - {nome: Raffaele Coppola, da: {it: Napoli, en: Naples, fr: Naples}}
       - {nome: Amalia Borsellino, da: Catania}
-      - {nome: Raffaella Crapio, da: Acireale}
+      - {nome: Raffaella Crapio, da: {it: Barcellona, en: Barcelona, fr: Barcelone}}
       - {nome: "Benedetta Agostinis, Melania Caggegi", da: Catania}
   - giorno: 24
     nome: {it: domenica, en: Sunday, fr: dimanche}
