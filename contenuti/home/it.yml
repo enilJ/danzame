@@ -1,7 +1,9 @@
 # Testi della home in italiano.
 # Si possono modificare liberamente; le parti tra <em> e </em> vanno in corsivo.
 title_suffix: Associazione culturale, Acireale
-hero_alt: L'ensemble di Muddica 7 in due linee contrapposte sul palco di Scenario Pubblico, con i musicisti sullo sfondo
+hero_alt: "PÂTÀPAIN #3 al Teatro Massimo Bellini: l'ensemble si inarca all'indietro davanti all'orchestra"
+# Didascalia in alto a destra sulla foto di apertura (img/home/apertura.jpg)
+hero_credit: "PÂTÀPAIN #3 · Teatro Massimo Bellini, 2025 · Ph. Serena Nicoletti"
 hero_eyebrow: Associazione culturale · Acireale · dal 2003
 hero_h1: Danza come arte in movimento, <em>senza trucco</em>
 intro_label: L'associazione

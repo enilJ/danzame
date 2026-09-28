@@ -1,6 +1,8 @@
 # Home page texts in English.
 title_suffix: Cultural association, Acireale
-hero_alt: The Muddica 7 ensemble in two facing lines on the stage of Scenario Pubblico, with the musicians behind
+hero_alt: "PÂTÀPAIN #3 at the Teatro Massimo Bellini: the ensemble arches back in front of the orchestra"
+# Didascalia in alto a destra sulla foto di apertura (img/home/apertura.jpg)
+hero_credit: "PÂTÀPAIN #3 · Teatro Massimo Bellini, 2025 · Ph. Serena Nicoletti"
 hero_eyebrow: Cultural association · Acireale, Sicily · since 2003
 hero_h1: Dance as art in motion, <em>without make-up</em>
 intro_label: The association
