@@ -32,7 +32,7 @@ COMMON = {
     "fr": {
         "nav_works": "Chorégraphies", "nav_fest": "Mò.DANCEFEST", "nav_bio": "Biographie", "nav_contact": "Contact",
         "nav_label": "Principal", "lang_label": "Langue",
-        "motto": "La danse comme art en mouvement, sans trucs.",
+        "motto": "La danse comme art en mouvement, sans artifices.",
         "footer_assoc": "Association culturelle DANZ@M.E · Acireale",
         "footer_legal": "Code fiscal et n° de TVA 04082100878", "nav_privacy": "Confidentialité",
         "choreo_by": "Chorégraphie",
