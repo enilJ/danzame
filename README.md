@@ -14,7 +14,9 @@ Ogni modifica salvata in questo repository ripubblica il sito da sola in un paio
 | Foto delle coreografie | `img/coreografie/` |
 | Locandine e foto del festival | `img/festival/` |
 | Ritratto e foto d'archivio | `img/biografia/` |
+| Informativa privacy (pagina `privacy.html`) | `contenuti/privacy.yml` |
 | Grafica e codice | `strumenti/` (di solito non serve toccarlo) |
+| Caratteri tipografici, ospitati sul sito | `strumenti/modelli/font/` |
 
 ## Aggiungere una coreografia
 
@@ -37,6 +39,10 @@ In `contenuti/festival.yml`:
 3. carica la nuova locandina in `img/festival/`.
 
 Le foto dell'edizione vanno in `img/festival/` e si elencano sotto `foto:`. Finché la lista è vuota, in home al loro posto compare un riquadro "in arrivo".
+
+## Privacy e cookie
+
+Il sito non usa cookie né statistiche e non carica nulla da altri siti (anche i caratteri sono nel repository), quindi non serve il banner per il consenso. La pagina privacy lo spiega in tre lingue. Se un giorno si aggiungono video di YouTube o Vimeo, mappe, un modulo di contatto o statistiche di visita, va aggiornata `contenuti/privacy.yml` (con la data) e probabilmente serve anche il banner. La P.IVA dell'associazione nel piè di pagina è obbligatoria per legge: non toglierla.
 
 ## Se qualcosa non va
 

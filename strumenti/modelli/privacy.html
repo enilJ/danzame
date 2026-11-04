@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="[[lang]]">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>[[titolo]] · danz@m.e</title>
+<meta name="description" content="[[titolo]] · Associazione Culturale DANZ@M.E">
+[[hreflang]]
+[[fonts]]
+[[css]]
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{background:var(--paper)}
+body{margin:0}
+.langs{display:flex;gap:2px;margin-left:clamp(4px,1vw,12px);padding-left:clamp(10px,1.6vw,20px);border-left:1px solid var(--rule)}
+.langs a{font-family:var(--mono);font-size:12px!important;letter-spacing:.06em;text-transform:uppercase;padding:2px 4px}
+.langs a[aria-current]{color:var(--ink)}
+@media (max-width:640px){.langs{margin-left:auto;border-left:0;padding-left:0}}
+.legal{padding-block:clamp(48px,8vw,96px) clamp(64px,10vw,120px)}
+.legal .in{max-width:68ch}
+.legal h1{font-size:clamp(40px,6vw,72px);margin:14px 0 clamp(28px,4vw,44px)}
+.legal .lede{font-family:var(--display);font-size:clamp(20px,2.2vw,26px);line-height:1.4}
+.legal h2{font-size:clamp(24px,2.6vw,30px);margin:clamp(36px,5vw,52px) 0 12px}
+.legal p + p{margin-top:.8em}
+.legal a{color:var(--accent)}
+footer.site{background:#0A0B10;color:#E6E8EE;padding-block:40px}
+footer.site .wrap{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;font-size:14px;color:#8D93A5}
+footer.site em{font-family:var(--display);font-size:22px;color:#E6E8EE}
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">danz<b>@</b>m.e</a>
+    <nav class="nav" aria-label="[[nav_label]]">
+      <a href="coreografie.html">[[nav_works]]</a>
+      <a href="index.html#festival">[[nav_fest]]</a>
+      <a href="index.html#biografia">[[nav_bio]]</a>
+      <a class="opt" href="index.html#contatti">[[nav_contact]]</a>
+      [[langswitch]]
+    </nav>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <div class="in">
+      <span class="label">[[aggiornata]] · [[data]]</span>
+      <h1>[[titolo]]</h1>
+      [[corpo]]
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap"><em>[[motto]]</em><span>[[footer_assoc]] · [[footer_legal]] · <a href="privacy.html" aria-current="page">[[nav_privacy]]</a></span></div>
+</footer>
+</body>
+</html>

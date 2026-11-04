@@ -22,7 +22,7 @@ import yaml
 from PIL import Image, ImageOps
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lingue import COMMON, LANG_NAMES, LANGS, MONTHS_IT, WORKS_UI, tr_work  # noqa: E402
+from lingue import COMMON, LANG_NAMES, LANGS, MONTHS_IT, WORKS_UI, tr_text, tr_work  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
@@ -34,6 +34,30 @@ MAX_LATO_APERTURA = 1800
 MAX_IN_HOME = 6
 
 errori = []
+
+# Caratteri tipografici ospitati sul sito (strumenti/modelli/font/, licenza SIL OFL),
+# così nessuna pagina chiede nulla a server esterni come Google Fonts.
+FONT = MODELLI / "font"
+_LATIN = ("U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,"
+          "U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD")
+_LATIN_EXT = ("U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,"
+              "U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF")
+_FACCE = [  # famiglia, stile, peso, file (senza sottoinsieme)
+    ("Bodoni Moda", "normal", "400 900", "bodoni-moda-{s}-opsz-normal"),
+    ("Bodoni Moda", "italic", "400 900", "bodoni-moda-{s}-opsz-italic"),
+    ("Hanken Grotesk", "normal", "100 900", "hanken-grotesk-{s}-wght-normal"),
+    ("IBM Plex Mono", "normal", "400", "ibm-plex-mono-{s}-400-normal"),
+    ("IBM Plex Mono", "normal", "500", "ibm-plex-mono-{s}-500-normal"),
+]
+
+
+def font_css(r):
+    regole = []
+    for fam, stile, peso, nome in _FACCE:
+        for sub, rng in (("latin-ext", _LATIN_EXT), ("latin", _LATIN)):
+            regole.append(f"@font-face{{font-family:'{fam}';font-style:{stile};font-weight:{peso};font-display:swap;"
+                          f"src:url({r}font/{nome.format(s=sub)}.woff2) format('woff2');unicode-range:{rng}}}")
+    return "<style>\n" + "\n".join(regole) + "\n</style>"
 
 
 def carica(path):
@@ -261,7 +285,7 @@ def pagina_home(lang, works, fest):
     righe = lambda rows: "".join(f'<li><span class="y">{x["anno"]}</span><span>{x["testo"]}</span></li>' for x in rows)
     days, partners, photos, past = festival_html(fest, lang, t, r)
     values = {**c, **{k: str(v).replace("[[n_works]]", n) for k, v in t.items() if not isinstance(v, (list, dict))},
-              "r": r, "css": (MODELLI / "home.css").read_text(encoding="utf-8"),
+              "r": r, "fonts": font_css(r), "css": (MODELLI / "home.css").read_text(encoding="utf-8"),
               "hreflang": hreflang("index.html"), "langswitch": selettore_lingua(lang, "index.html"),
               "cards": "\n        ".join(cards), "seasons": seasons,
               "awards": righe(t["awards"]), "juries": righe(t["juries"]),
@@ -288,7 +312,7 @@ def pagina_coreografie(lang, works):
             photos[w["slug"]] = [{"src": r + f["src"], "w": dimensioni.get(f["src"], (0, 0))[0],
                                   "h": dimensioni.get(f["src"], (0, 0))[1]} for f in w["foto"]]
     T = {**ui, "choreo_by": c["choreo_by"]}
-    values = {**c, **{k: v for k, v in ui.items() if isinstance(v, str)}, "lang": lang,
+    values = {**c, **{k: v for k, v in ui.items() if isinstance(v, str)}, "lang": lang, "fonts": font_css(r),
               "hreflang": hreflang("coreografie.html"), "langswitch": selettore_lingua(lang, "coreografie.html"),
               "pl_sv": ui["places"]["Svizzera"], "pl_si": ui["places"]["Sicilia"], "pl_al": ui["places"]["Altrove"]}
     out = riempi((MODELLI / "coreografie.html").read_text(encoding="utf-8"), values)
@@ -296,6 +320,20 @@ def pagina_coreografie(lang, works):
               .replace("/*PHOTOS*/", json.dumps(photos, ensure_ascii=False))
               .replace("/*T*/", json.dumps(T, ensure_ascii=False)))
     return out.replace("</body>", MANTIENI_SCHEDA + "\n</body>")
+
+
+def pagina_privacy(lang):
+    p = carica(ROOT / "contenuti" / "privacy.yml")
+    t = p.get(lang) or {}
+    if not t.get("titolo") or not t.get("corpo"):
+        errori.append(f"privacy.yml: manca il testo in '{lang}' (servono titolo e corpo)")
+        return ""
+    values = {**COMMON[lang], "lang": lang, "fonts": font_css(prefisso(lang)),
+              "css": (MODELLI / "home.css").read_text(encoding="utf-8"),
+              "hreflang": hreflang("privacy.html"), "langswitch": selettore_lingua(lang, "privacy.html"),
+              "titolo": html.escape(t["titolo"]), "aggiornata": html.escape(t.get("aggiornata", "")),
+              "data": html.escape(tr_text(str(p.get("aggiornata", "")), lang)), "corpo": t["corpo"]}
+    return riempi((MODELLI / "privacy.html").read_text(encoding="utf-8"), values)
 
 
 def pagina_404():
@@ -339,6 +377,7 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     prepara_immagini()
+    shutil.copytree(FONT, OUT / "font")
     works = carica_coreografie()
     fest = carica(ROOT / "contenuti" / "festival.yml")
     if errori:
@@ -353,7 +392,9 @@ def main():
         corpo, doc = pagina_home(lang, works, fest)
         (d / "index.html").write_text(corpo if anteprima and lang == "it" else doc, encoding="utf-8")
         (d / "coreografie.html").write_text(pagina_coreografie(lang, works), encoding="utf-8")
-        pagine += [f"{SITE}{cartella(lang)}", f"{SITE}{cartella(lang)}coreografie.html"]
+        (d / "privacy.html").write_text(pagina_privacy(lang), encoding="utf-8")
+        pagine += [f"{SITE}{cartella(lang)}", f"{SITE}{cartella(lang)}coreografie.html",
+                   f"{SITE}{cartella(lang)}privacy.html"]
     if errori:
         print("Da correggere prima di pubblicare:")
         for e in errori:

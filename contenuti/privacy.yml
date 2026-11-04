@@ -1,0 +1,75 @@
+# Informativa privacy (pagina privacy.html, in italiano, inglese e francese).
+# Il testo è HTML semplice: <h2> per i titoli, <p> per i paragrafi, <ul><li> per gli elenchi.
+# Se cambia qualcosa sul sito (un form, video incorporati, statistiche, un altro hosting)
+# questa pagina va aggiornata, insieme alla data qui sotto.
+
+aggiornata: 4 novembre 2026
+
+it:
+  titolo: Informativa privacy
+  aggiornata: Ultimo aggiornamento
+  corpo: |
+    <p class="lede">Questo sito non usa cookie, non raccoglie statistiche e non contiene servizi di terze parti. Qui spieghiamo quali pochi dati personali passano comunque per il sito e come li trattiamo, come chiede il Regolamento europeo 2016/679 (GDPR, art. 13).</p>
+
+    <h2>Titolare del trattamento</h2>
+    <p>Associazione Culturale DANZ@M.E<br>Via Caronia, 2 · 95024 Acireale (CT), Italia<br>C.F. e P.IVA 04082100878<br>Email: <a href="mailto:enricomusmeci@virgilio.it">enricomusmeci@virgilio.it</a> · Tel. +39 380 722 9720</p>
+
+    <h2>Navigazione e hosting</h2>
+    <p>Il sito è ospitato su GitHub Pages, un servizio di GitHub, Inc. (Stati Uniti). Quando visitate una pagina, GitHub registra l'indirizzo IP del vostro dispositivo per motivi di sicurezza e per far funzionare il servizio. L'associazione non ha accesso a questi dati e non li usa.</p>
+    <p>La base giuridica è il legittimo interesse a mettere online il sito e a proteggerlo (art. 6, par. 1, lett. f GDPR). I dati possono essere trasferiti negli Stati Uniti: GitHub aderisce all'EU-U.S. Data Privacy Framework, riconosciuto adeguato dalla Commissione europea. Tempi di conservazione e garanzie sono descritti nella <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">informativa di GitHub</a>.</p>
+
+    <h2>Cookie e strumenti di tracciamento</h2>
+    <p>Il sito non installa cookie, né tecnici né di profilazione, e non usa altri strumenti di tracciamento (statistiche, pixel, fingerprinting). Anche i caratteri tipografici sono ospitati sul sito stesso, senza richieste a server esterni. Per questo non c'è un banner per il consenso.</p>
+
+    <h2>Se ci scrivete o ci telefonate</h2>
+    <p>Se ci contattate all'indirizzo email o al numero indicati, useremo i dati che ci date (nome, recapiti, contenuto del messaggio) solo per rispondervi e, se ci chiedete informazioni su spettacoli, workshop o altre attività, per dare seguito alla richiesta (art. 6, par. 1, lett. b e f GDPR). Non li comunichiamo ad altri e non li usiamo per inviarvi comunicazioni che non avete chiesto. Li conserviamo per il tempo necessario a gestire la richiesta, salvo obblighi di legge.</p>
+
+    <h2>I vostri diritti</h2>
+    <p>Potete chiedere in qualsiasi momento di accedere ai vostri dati, di correggerli o cancellarli, di limitarne il trattamento, di opporvi al trattamento e di ricevere i dati in un formato portabile (artt. 15–22 GDPR), scrivendo all'indirizzo email indicato sopra. Avete anche il diritto di presentare un reclamo al <a href="https://www.garanteprivacy.it" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+    <p>Non è obbligatorio fornirci dati: per navigare il sito non serve nulla. Non effettuiamo alcun processo decisionale automatizzato né profilazione.</p>
+
+en:
+  titolo: Privacy policy
+  aggiornata: Last updated
+  corpo: |
+    <p class="lede">This website uses no cookies, collects no statistics and contains no third-party services. This page explains the little personal data that still passes through the site and how we handle it, as required by the EU General Data Protection Regulation 2016/679 (GDPR, Art. 13).</p>
+
+    <h2>Data controller</h2>
+    <p>Associazione Culturale DANZ@M.E<br>Via Caronia, 2 · 95024 Acireale (CT), Italy<br>Tax code and VAT no. 04082100878<br>Email: <a href="mailto:enricomusmeci@virgilio.it">enricomusmeci@virgilio.it</a> · Phone +39 380 722 9720</p>
+
+    <h2>Browsing and hosting</h2>
+    <p>The site is hosted on GitHub Pages, a service of GitHub, Inc. (United States). When you visit a page, GitHub logs your device's IP address for security purposes and to run the service. The association has no access to this data and does not use it.</p>
+    <p>The legal basis is our legitimate interest in putting the site online and protecting it (GDPR Art. 6(1)(f)). The data may be transferred to the United States: GitHub participates in the EU-U.S. Data Privacy Framework, which the European Commission has recognised as adequate. Retention periods and safeguards are described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub's privacy statement</a>.</p>
+
+    <h2>Cookies and tracking</h2>
+    <p>The site sets no cookies, neither technical nor profiling ones, and uses no other tracking tools (analytics, pixels, fingerprinting). The typefaces are also hosted on the site itself, with no requests to external servers. That is why there is no consent banner.</p>
+
+    <h2>If you email or call us</h2>
+    <p>If you contact us at the email address or phone number given above, we will use the data you provide (name, contact details, the content of your message) only to reply to you and, if you ask about performances, workshops or other activities, to follow up on your request (GDPR Art. 6(1)(b) and (f)). We do not share it with anyone else and do not use it to send you messages you have not asked for. We keep it for as long as needed to deal with your request, unless the law requires otherwise.</p>
+
+    <h2>Your rights</h2>
+    <p>You can ask at any time to access your data, to have it corrected or erased, to restrict or object to its processing, and to receive it in a portable format (GDPR Arts. 15–22), by writing to the email address above. You also have the right to lodge a complaint with a supervisory authority, in Italy the <a href="https://www.garanteprivacy.it" rel="noopener">Garante per la protezione dei dati personali</a>, or the authority of the EU country where you live.</p>
+    <p>You are not required to give us any data: nothing is needed to browse the site. We carry out no automated decision-making or profiling.</p>
+
+fr:
+  titolo: Politique de confidentialité
+  aggiornata: Dernière mise à jour
+  corpo: |
+    <p class="lede">Ce site n'utilise pas de cookies, ne collecte pas de statistiques et ne contient aucun service tiers. Cette page explique les quelques données personnelles qui transitent malgré tout par le site et la manière dont nous les traitons, comme le prévoit le Règlement général sur la protection des données 2016/679 (RGPD, art. 13).</p>
+
+    <h2>Responsable du traitement</h2>
+    <p>Associazione Culturale DANZ@M.E<br>Via Caronia, 2 · 95024 Acireale (CT), Italie<br>Code fiscal et n° de TVA 04082100878<br>E-mail : <a href="mailto:enricomusmeci@virgilio.it">enricomusmeci@virgilio.it</a> · Tél. +39 380 722 9720</p>
+
+    <h2>Navigation et hébergement</h2>
+    <p>Le site est hébergé sur GitHub Pages, un service de GitHub, Inc. (États-Unis). Lorsque vous consultez une page, GitHub enregistre l'adresse IP de votre appareil pour des raisons de sécurité et pour faire fonctionner le service. L'association n'a pas accès à ces données et ne les utilise pas.</p>
+    <p>La base juridique est notre intérêt légitime à mettre le site en ligne et à le protéger (art. 6, par. 1, point f du RGPD). Les données peuvent être transférées aux États-Unis : GitHub adhère au cadre de protection des données UE–États-Unis (EU-U.S. Data Privacy Framework), reconnu adéquat par la Commission européenne. Les durées de conservation et les garanties sont décrites dans la <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">déclaration de confidentialité de GitHub</a>.</p>
+
+    <h2>Cookies et traceurs</h2>
+    <p>Le site ne dépose aucun cookie, ni technique ni de profilage, et n'utilise aucun autre traceur (statistiques, pixels, empreinte numérique). Les polices de caractères sont elles aussi hébergées sur le site, sans aucune requête vers des serveurs externes. C'est pourquoi il n'y a pas de bandeau de consentement.</p>
+
+    <h2>Si vous nous écrivez ou nous appelez</h2>
+    <p>Si vous nous contactez à l'adresse e-mail ou au numéro indiqués, nous utiliserons les données que vous nous communiquez (nom, coordonnées, contenu du message) uniquement pour vous répondre et, si vous nous demandez des informations sur des spectacles, des ateliers ou d'autres activités, pour donner suite à votre demande (art. 6, par. 1, points b et f du RGPD). Nous ne les transmettons à personne et ne les utilisons pas pour vous envoyer des messages que vous n'avez pas demandés. Nous les conservons le temps nécessaire au traitement de votre demande, sauf obligation légale.</p>
+
+    <h2>Vos droits</h2>
+    <p>Vous pouvez à tout moment demander l'accès à vos données, leur rectification ou leur effacement, la limitation du traitement, vous opposer au traitement et recevoir vos données dans un format portable (art. 15 à 22 du RGPD), en écrivant à l'adresse e-mail ci-dessus. Vous avez également le droit d'introduire une réclamation auprès d'une autorité de contrôle : en Italie le <a href="https://www.garanteprivacy.it" rel="noopener">Garante per la protezione dei dati personali</a>, en France la <a href="https://www.cnil.fr" rel="noopener">CNIL</a>, ou l'autorité du pays de l'UE où vous résidez.</p>
+    <p>Vous n'êtes pas tenu de nous fournir des données : rien n'est nécessaire pour consulter le site. Nous ne procédons à aucune prise de décision automatisée ni à aucun profilage.</p>

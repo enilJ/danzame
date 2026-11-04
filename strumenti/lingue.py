@@ -18,6 +18,7 @@ COMMON = {
         "nav_label": "Principale", "lang_label": "Lingua",
         "motto": "Danza come arte in movimento, senza trucco.",
         "footer_assoc": "Associazione Culturale DANZ@M.E · Acireale",
+        "footer_legal": "C.F. e P.IVA 04082100878", "nav_privacy": "Privacy",
         "choreo_by": "Coreografia",
     },
     "en": {
@@ -25,6 +26,7 @@ COMMON = {
         "nav_label": "Main", "lang_label": "Language",
         "motto": "Dance as art in motion, without make-up.",
         "footer_assoc": "DANZ@M.E Cultural Association · Acireale",
+        "footer_legal": "Tax code and VAT no. 04082100878", "nav_privacy": "Privacy",
         "choreo_by": "Choreography",
     },
     "fr": {
@@ -32,6 +34,7 @@ COMMON = {
         "nav_label": "Principal", "lang_label": "Langue",
         "motto": "La danse comme art en mouvement, sans maquillage.",
         "footer_assoc": "Association culturelle DANZ@M.E · Acireale",
+        "footer_legal": "Code fiscal et n° de TVA 04082100878", "nav_privacy": "Confidentialité",
         "choreo_by": "Chorégraphie",
     },
 }
