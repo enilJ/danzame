@@ -175,6 +175,16 @@ footer p{font-size:15px;margin-top:8px}
 footer .sel{user-select:all}
 footer .base{margin-top:48px;padding-top:20px;border-top:1px solid #23262F;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#8D93A5}
 
+/* ---------- social nel piè di pagina ---------- */
+.social{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.social a{display:inline-flex;align-items:center;gap:8px;padding:7px 12px 7px 14px;border:1px solid #2E3240;border-radius:999px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#E6E8EE;transition:border-color .2s,color .2s,background-color .2s}
+.social a span{font-family:var(--sans);font-size:13px;letter-spacing:0;color:#8D93A5;transition:transform .2s,color .2s}
+.social a:hover{border-color:#AEB8FF;color:#fff;background:rgba(174,184,255,.08)}
+.social a:hover span{color:#AEB8FF;transform:translate(2px,-2px)}
+.social a:focus-visible{outline:2px solid #AEB8FF;outline-offset:3px}
+footer.site .social{margin-top:0;align-items:center}
+footer.site .social a{padding:5px 12px 5px 14px;font-size:11px}
+
 .proto{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:var(--accent);color:#fff;text-align:center;padding:6px 16px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>

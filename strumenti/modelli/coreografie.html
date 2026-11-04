@@ -160,6 +160,15 @@ blockquote footer{margin-top:14px;font-family:var(--mono);font-size:12px;letter-
 footer.site{background:#0A0B10;color:#E6E8EE;padding-block:40px}
 footer.site .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:#8D93A5}
 footer.site em{font-family:var(--display);font-size:22px;color:#E6E8EE}
+/* ---------- social nel piè di pagina ---------- */
+.social{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.social a{display:inline-flex;align-items:center;gap:8px;padding:7px 12px 7px 14px;border:1px solid #2E3240;border-radius:999px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#E6E8EE;transition:border-color .2s,color .2s,background-color .2s}
+.social a span{font-family:var(--sans);font-size:13px;letter-spacing:0;color:#8D93A5;transition:transform .2s,color .2s}
+.social a:hover{border-color:#AEB8FF;color:#fff;background:rgba(174,184,255,.08)}
+.social a:hover span{color:#AEB8FF;transform:translate(2px,-2px)}
+.social a:focus-visible{outline:2px solid #AEB8FF;outline-offset:3px}
+footer.site .social{margin-top:0;align-items:center}
+footer.site .social a{padding:5px 12px 5px 14px;font-size:11px}
 </style>
 </head>
 <body>
@@ -208,7 +217,7 @@ footer.site em{font-family:var(--display);font-size:22px;color:#E6E8EE}
 </main>
 
 <footer class="site">
-  <div class="wrap"><em>[[motto]]</em><span>[[footer_assoc]] · [[footer_legal]] · <a href="privacy.html">[[nav_privacy]]</a></span></div>
+  <div class="wrap"><em>[[motto]]</em><span>[[footer_assoc]] · [[footer_legal]] · <a href="privacy.html">[[nav_privacy]]</a></span>[[social]]</div>
 </footer>
 
 <script>

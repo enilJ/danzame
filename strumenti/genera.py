@@ -51,6 +51,19 @@ _FACCE = [  # famiglia, stile, peso, file (senza sottoinsieme)
 ]
 
 
+# Profili social mostrati nel piè di pagina (semplici link: nessun widget, nessun cookie).
+SOCIAL = [
+    ("Instagram", "https://www.instagram.com/enricomusmeci/"),
+    ("Facebook", "https://www.facebook.com/enrico.musmeci.1"),
+]
+
+
+def social_html():
+    link = "".join(f'<a href="{url}" target="_blank" rel="noopener">{nome}<span aria-hidden="true">↗</span></a>'
+                   for nome, url in SOCIAL)
+    return f'<span class="social">{link}</span>'
+
+
 def font_css(r):
     regole = []
     for fam, stile, peso, nome in _FACCE:
@@ -285,7 +298,7 @@ def pagina_home(lang, works, fest):
     righe = lambda rows: "".join(f'<li><span class="y">{x["anno"]}</span><span>{x["testo"]}</span></li>' for x in rows)
     days, partners, photos, past = festival_html(fest, lang, t, r)
     values = {**c, **{k: str(v).replace("[[n_works]]", n) for k, v in t.items() if not isinstance(v, (list, dict))},
-              "r": r, "fonts": font_css(r), "css": (MODELLI / "home.css").read_text(encoding="utf-8"),
+              "r": r, "social": social_html(), "fonts": font_css(r), "css": (MODELLI / "home.css").read_text(encoding="utf-8"),
               "hreflang": hreflang("index.html"), "langswitch": selettore_lingua(lang, "index.html"),
               "cards": "\n        ".join(cards), "seasons": seasons,
               "awards": righe(t["awards"]), "juries": righe(t["juries"]),
@@ -312,7 +325,7 @@ def pagina_coreografie(lang, works):
             photos[w["slug"]] = [{"src": r + f["src"], "w": dimensioni.get(f["src"], (0, 0))[0],
                                   "h": dimensioni.get(f["src"], (0, 0))[1]} for f in w["foto"]]
     T = {**ui, "choreo_by": c["choreo_by"]}
-    values = {**c, **{k: v for k, v in ui.items() if isinstance(v, str)}, "lang": lang, "fonts": font_css(r),
+    values = {**c, **{k: v for k, v in ui.items() if isinstance(v, str)}, "lang": lang, "fonts": font_css(r), "social": social_html(),
               "hreflang": hreflang("coreografie.html"), "langswitch": selettore_lingua(lang, "coreografie.html"),
               "pl_sv": ui["places"]["Svizzera"], "pl_si": ui["places"]["Sicilia"], "pl_al": ui["places"]["Altrove"]}
     out = riempi((MODELLI / "coreografie.html").read_text(encoding="utf-8"), values)
@@ -328,7 +341,7 @@ def pagina_privacy(lang):
     if not t.get("titolo") or not t.get("corpo"):
         errori.append(f"privacy.yml: manca il testo in '{lang}' (servono titolo e corpo)")
         return ""
-    values = {**COMMON[lang], "lang": lang, "fonts": font_css(prefisso(lang)),
+    values = {**COMMON[lang], "lang": lang, "fonts": font_css(prefisso(lang)), "social": social_html(),
               "css": (MODELLI / "home.css").read_text(encoding="utf-8"),
               "hreflang": hreflang("privacy.html"), "langswitch": selettore_lingua(lang, "privacy.html"),
               "titolo": html.escape(t["titolo"]), "aggiornata": html.escape(t.get("aggiornata", "")),
