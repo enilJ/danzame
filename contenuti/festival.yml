@@ -1,7 +1,8 @@
 # Mò.DANCEFEST: l'edizione mostrata in evidenza nella home.
 # Per una nuova edizione: aggiorna edizione, anno, date, locandina e giorni,
 # e sposta l'edizione appena conclusa in "edizioni_precedenti".
-# I testi con it/en/fr vanno scritti nelle tre lingue (se manca una lingua si usa l'italiano).
+# I testi con it/en/fr/de vanno scritti nelle quattro lingue (se manca una lingua si usa l'italiano).
+# In tedesco i giorni vogliono il punto: 22.–24. Mai.
 
 edizione: 5
 anno: 2026
@@ -10,42 +11,46 @@ date:
   it: 22–24 maggio 2026
   en: 22–24 May 2026
   fr: 22–24 mai 2026
+  de: 22.–24. Mai 2026
 
 giorni:
   - giorno: 22
-    nome: {it: venerdì, en: Friday, fr: vendredi}
-    titolo: {it: "Masterclass · Performance 20:15", en: "Masterclass · Performances 20:15", fr: "Masterclass · Spectacles 20:15"}
+    nome: {it: venerdì, en: Friday, fr: vendredi, de: Freitag}
+    titolo: {it: "Masterclass · Performance 20:15", en: "Masterclass · Performances 20:15", fr: "Masterclass · Spectacles 20:15", de: "Masterclass · Vorstellungen 20:15"}
     testo:
       it: Masterclass hip hop e improvvisazione con Rafael Smadja (Cie. Champloo, CH).
       en: Hip hop and improvisation masterclass with Rafael Smadja (Cie. Champloo, CH).
       fr: Masterclass hip-hop et improvisation avec Rafael Smadja (Cie Champloo, CH).
+      de: Masterclass Hip-Hop und Improvisation mit Rafael Smadja (Cie. Champloo, CH).
     artisti:
       - {nome: Melania Caggegi, da: Linguaglossa}
       - {nome: Annalisa Di Lanno / GEMA C.C., da: Catania}
       - {nome: "Maria Stella Pitarresi, Marco Pergallini / platz14", da: Palermo}
-      - {nome: Raffaella Crapio, da: {it: Barcellona, en: Barcelona, fr: Barcelone}}
-      - {nome: "Rafael Smadja, Ernesto Marquez", da: {it: Francia, en: France, fr: France}}
+      - {nome: Raffaella Crapio, da: {it: Barcellona, en: Barcelona, fr: Barcelone, de: Barcelona}}
+      - {nome: "Rafael Smadja, Ernesto Marquez", da: {it: Francia, en: France, fr: France, de: Frankreich}}
   - giorno: 23
-    nome: {it: sabato, en: Saturday, fr: samedi}
-    titolo: {it: "Masterclass · Laboratorio · Performance 20:15", en: "Masterclass · Lab · Performances 20:15", fr: "Masterclass · Laboratoire · Spectacles 20:15"}
+    nome: {it: sabato, en: Saturday, fr: samedi, de: Samstag}
+    titolo: {it: "Masterclass · Laboratorio · Performance 20:15", en: "Masterclass · Lab · Performances 20:15", fr: "Masterclass · Laboratoire · Spectacles 20:15", de: "Masterclass · Labor · Vorstellungen 20:15"}
     testo:
       it: Masterclass di contemporaneo con Raffaella Crapio (Cia. Xauru, E) e laboratorio coreografico con Amalia Borsellino (Collettivo SicilyMade).
       en: Contemporary masterclass with Raffaella Crapio (Cia. Xauru, ES) and choreographic lab with Amalia Borsellino (Collettivo SicilyMade).
       fr: Masterclass contemporain avec Raffaella Crapio (Cia. Xauru, ES) et laboratoire chorégraphique avec Amalia Borsellino (Collettivo SicilyMade).
+      de: Masterclass zeitgenössischer Tanz mit Raffaella Crapio (Cia. Xauru, ES) und choreografisches Labor mit Amalia Borsellino (Collettivo SicilyMade).
     artisti:
       - {nome: Serena Cavalli / BalletStudio, da: Aci Bonaccorsi}
       - {nome: Agnese Canicattì, da: Agrigento}
-      - {nome: Raffaele Coppola, da: {it: Napoli, en: Naples, fr: Naples}}
+      - {nome: Raffaele Coppola, da: {it: Napoli, en: Naples, fr: Naples, de: Neapel}}
       - {nome: Amalia Borsellino, da: Catania}
-      - {nome: Raffaella Crapio, da: {it: Barcellona, en: Barcelona, fr: Barcelone}}
+      - {nome: Raffaella Crapio, da: {it: Barcellona, en: Barcelona, fr: Barcelone, de: Barcelona}}
       - {nome: "Benedetta Agostinis, Melania Caggegi", da: Catania}
   - giorno: 24
-    nome: {it: domenica, en: Sunday, fr: dimanche}
-    titolo: {it: "Restituzione delle residenze 18:00", en: "Residency showing 18:00", fr: "Présentation des résidences 18:00"}
+    nome: {it: domenica, en: Sunday, fr: dimanche, de: Sonntag}
+    titolo: {it: "Restituzione delle residenze 18:00", en: "Residency showing 18:00", fr: "Présentation des résidences 18:00", de: "Präsentation der Residenzen 18:00"}
     testo:
       it: Le tre coppie in residenza presentano il lavoro svolto durante il festival.
       en: The three pairs in residence present the work they developed during the festival.
       fr: Les trois duos en résidence présentent le travail mené pendant le festival.
+      de: Die drei Duos in Residenz zeigen die Arbeit, die während des Festivals entstanden ist.
     artisti:
       - {nome: "Chiara Di Guardo, Marco Fichera"}
       - {nome: "Gaetano Palermo, Michele Petrosino"}
@@ -68,13 +73,13 @@ foto:
 edizioni_precedenti:
   - anno: 2025
     locandina: 2025.jpg
-    didascalia: {it: "4ª ed. · 25–29 aprile", en: "4th ed. · 25–29 April", fr: "4e éd. · 25–29 avril"}
+    didascalia: {it: "4ª ed. · 25–29 aprile", en: "4th ed. · 25–29 April", fr: "4e éd. · 25–29 avril", de: "4. Ausg. · 25.–29. April"}
   - anno: 2024
     locandina: 2024.jpg
-    didascalia: {it: "3ª ed. · aprile", en: "3rd ed. · April", fr: "3e éd. · avril"}
+    didascalia: {it: "3ª ed. · aprile", en: "3rd ed. · April", fr: "3e éd. · avril", de: "3. Ausg. · April"}
   - anno: 2023
     locandina: 2023.jpg
-    didascalia: {it: "2ª ed. · aprile", en: "2nd ed. · April", fr: "2e éd. · avril"}
+    didascalia: {it: "2ª ed. · aprile", en: "2nd ed. · April", fr: "2e éd. · avril", de: "2. Ausg. · April"}
   - anno: 2022
     locandina: 2022.jpg
-    didascalia: {it: "Promotion · 4–5 giugno", en: "Promotion · 4–5 June", fr: "Promotion · 4–5 juin"}
+    didascalia: {it: "Promotion · 4–5 giugno", en: "Promotion · 4–5 June", fr: "Promotion · 4–5 juin", de: "Promotion · 4.–5. Juni"}

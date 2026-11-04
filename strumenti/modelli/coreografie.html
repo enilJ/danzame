@@ -122,12 +122,11 @@ p{margin:0}
 .credits dt{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:3px}
 .credits dd{margin:0}
 
-.gallery{column-count:3;column-gap:clamp(8px,1.2vw,16px);margin-top:clamp(36px,5vw,56px)}
-.gallery.n1{column-count:1;max-width:900px}
-.gallery.n2{column-count:2}
-@media (max-width:860px){.gallery{column-count:2}}
-@media (max-width:520px){.gallery,.gallery.n2{column-count:1}}
-.gallery button{display:block;width:100%;padding:0;border:0;margin:0 0 clamp(8px,1.2vw,16px);background:var(--paper-2);cursor:zoom-in;break-inside:avoid}
+/* galleria a mosaico: le foto si leggono per righe (1-2-3, 4-5-6…), le colonne le crea lo script */
+.gallery{display:flex;align-items:flex-start;gap:clamp(8px,1.2vw,16px);margin-top:clamp(36px,5vw,56px)}
+.gallery.n1{max-width:900px}
+.gallery .col{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:clamp(8px,1.2vw,16px)}
+.gallery button{display:block;width:100%;padding:0;border:0;margin:0;background:var(--paper-2);cursor:zoom-in}
 .gallery img{width:100%;height:auto}
 .photo-credit{margin-top:6px}
 .lightbox{position:fixed;inset:0;z-index:50;background:rgba(7,8,12,.94);display:grid;grid-template-rows:1fr auto;padding:calc(env(safe-area-inset-top,0px) + 16px) 16px calc(env(safe-area-inset-bottom,0px) + 16px)}
@@ -321,6 +320,26 @@ function renderList(){
   list.innerHTML = html || `<p class="empty">${T.empty}</p>`;
 }
 
+/* ---- galleria: ogni foto va nella colonna più corta, così l'ordine si legge per righe ---- */
+const MQ_2 = matchMedia("(max-width:860px)"), MQ_1 = matchMedia("(max-width:520px)");
+function galleryCols(local, w){
+  const max = local.length === 1 ? 1 : local.length === 2 ? 2 : 3;
+  const n = Math.min(max, MQ_1.matches ? 1 : MQ_2.matches ? 2 : 3);
+  const cols = Array.from({length: n}, () => ({h: 0, html: ""}));
+  local.forEach((p, k) => {
+    const col = cols.reduce((a, b) => b.h < a.h - 0.01 ? b : a);
+    col.html += `<button type="button" data-k="${k}" aria-label="${T.enlarge.replace("{k}",k+1).replace("{n}",local.length)}"><img loading="lazy" src="${p.src}" width="${p.w}" height="${p.h}" alt="${esc(T.photo_alt.replace("{t}",w.titolo).replace("{k}",k+1))}"></button>`;
+    col.h += p.w && p.h ? p.h / p.w : 0.67;
+  });
+  return cols.map(c => `<div class="col">${c.html}</div>`).join("");
+}
+function refreshGallery(){
+  const g = document.querySelector("#work-view:not([hidden]) .gallery");
+  const w = WORKS.find(x => x.slug === location.hash.slice(1));
+  if (g && w) g.innerHTML = galleryCols(PHOTOS[w.slug] || [], w);
+}
+MQ_2.addEventListener("change", refreshGallery); MQ_1.addEventListener("change", refreshGallery);
+
 /* ---- scheda ---- */
 function renderWork(w){
   const i = byYear.indexOf(w), prev = byYear[i-1], next = byYear[i+1];
@@ -332,7 +351,7 @@ function renderWork(w){
   let photos = "";
   if (local.length) {
     const cls = local.length === 1 ? " n1" : local.length === 2 ? " n2" : "";
-    photos = `<div class="gallery${cls}">${local.map((p,k) => `<button type="button" data-k="${k}" aria-label="${T.enlarge.replace("{k}",k+1).replace("{n}",local.length)}"><img loading="lazy" src="${p.src}" width="${p.w}" height="${p.h}" alt="${esc(T.photo_alt.replace("{t}",w.titolo).replace("{k}",k+1))}"></button>`).join("")}</div>` +
+    photos = `<div class="gallery${cls}">${galleryCols(local, w)}</div>` +
       (w.crediti.length ? `<p class="label photo-credit">${T.photo}: ${esc(w.crediti.join(", "))}</p>` : "");
   }
   const dates = (title, arr) => arr.length ? `<div class="work-body"><span class="label">${title}</span><ul class="dates">${arr.map(r => `<li>${esc(r)}</li>`).join("")}</ul></div>` : "";

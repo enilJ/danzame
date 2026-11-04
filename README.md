@@ -1,6 +1,6 @@
 # danzame.it
 
-Sito dell'Associazione Culturale DANZ@M.E di Acireale e archivio delle coreografie di C. Enrico Musmeci, in italiano, inglese e francese.
+Sito dell'Associazione Culturale DANZ@M.E di Acireale e archivio delle coreografie di C. Enrico Musmeci, in italiano, inglese, francese e tedesco.
 
 Ogni modifica salvata in questo repository ripubblica il sito da sola in un paio di minuti. Tutto si può fare dal browser, su github.com, senza installare niente.
 
@@ -10,7 +10,7 @@ Ogni modifica salvata in questo repository ripubblica il sito da sola in un paio
 |---|---|
 | Una scheda per ogni coreografia | `contenuti/coreografie/` (un file `.yml` per lavoro) |
 | Il Mò.DANCEFEST in evidenza in home | `contenuti/festival.yml` |
-| Testi della home e biografia | `contenuti/home/it.yml`, `en.yml`, `fr.yml` |
+| Testi della home e biografia | `contenuti/home/it.yml`, `en.yml`, `fr.yml`, `de.yml` |
 | Foto delle coreografie | `img/coreografie/` |
 | Locandine e foto del festival | `img/festival/` |
 | Ritratto e foto d'archivio | `img/biografia/` |
@@ -25,7 +25,7 @@ Ogni modifica salvata in questo repository ripubblica il sito da sola in un paio
 3. Torna in `contenuti/coreografie/`, poi **Add file → Create new file**. Chiama il file con un nome corto, minuscolo e senza spazi (`titolo-del-lavoro.yml`), incolla il modello e compila i campi.
 4. In fondo clicca **Commit changes**.
 
-Le repliche si scrivono tutte insieme: il sito mostra da solo quelle future come "Prossime date" e quelle passate come "Repliche". Date, "danzatori", "Prima" e le altre etichette si traducono automaticamente in inglese e francese. Titoli, teatri e compositori restano come sono.
+Le repliche si scrivono tutte insieme: il sito mostra da solo quelle future come "Prossime date" e quelle passate come "Repliche". Date, "danzatori", "Prima" e le altre etichette si traducono automaticamente in inglese, francese e tedesco (in tedesco anche il punto dopo il giorno: "20. Juni"). Titoli, teatri e compositori restano come sono.
 
 ## Cambiare i lavori mostrati in home
 
@@ -42,7 +42,7 @@ Le foto dell'edizione vanno in `img/festival/` e si elencano sotto `foto:`. Finc
 
 ## Privacy e cookie
 
-Il sito non usa cookie né statistiche e non carica nulla da altri siti (anche i caratteri sono nel repository), quindi non serve il banner per il consenso. La pagina privacy lo spiega in tre lingue. Se un giorno si aggiungono video di YouTube o Vimeo, mappe, un modulo di contatto o statistiche di visita, va aggiornata `contenuti/privacy.yml` (con la data) e probabilmente serve anche il banner. La P.IVA dell'associazione nel piè di pagina è obbligatoria per legge: non toglierla.
+Il sito non usa cookie né statistiche e non carica nulla da altri siti (anche i caratteri sono nel repository), quindi non serve il banner per il consenso. La pagina privacy lo spiega in quattro lingue. Se un giorno si aggiungono video di YouTube o Vimeo, mappe, un modulo di contatto o statistiche di visita, va aggiornata `contenuti/privacy.yml` (con la data) e probabilmente serve anche il banner. La P.IVA dell'associazione nel piè di pagina è obbligatoria per legge: non toglierla.
 
 ## Se qualcosa non va
 

@@ -232,6 +232,8 @@ def ordinale(n, lang):
         return f"{n}ª edizione"
     if lang == "fr":
         return f"{n}{'re' if n == 1 else 'e'} édition"
+    if lang == "de":
+        return f"{n}. Ausgabe"
     suf = "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
     return f"{n}{suf} edition"
 
@@ -377,7 +379,7 @@ h1{{font-weight:400;font-size:40px;margin:0 0 12px}} p{{font-family:system-ui,sa
 </style>
 </head>
 <body>
-<div><h1>Pagina non trovata</h1><p>Page not found · Page introuvable</p><p><a id="home" href="/">danz@m.e</a></p></div>
+<div><h1>Pagina non trovata</h1><p>Page not found · Page introuvable · Seite nicht gefunden</p><p><a id="home" href="/">danz@m.e</a></p></div>
 <script>if(location.hostname.endsWith("github.io")){{var b=location.pathname.match(/^\/[^\/]+\//);if(b)document.getElementById("home").href=b[0];}}</script>
 </body>
 </html>
@@ -420,7 +422,7 @@ def main():
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
     (OUT / ".nojekyll").write_text("")
     (OUT / "404.html").write_text(pagina_404(), encoding="utf-8")
-    print(f"Sito generato in _site/: {len(works)} coreografie, {len(dimensioni)} immagini, 3 lingue.")
+    print(f"Sito generato in _site/: {len(works)} coreografie, {len(dimensioni)} immagini, {len(LANGS)} lingue.")
 
 
 if __name__ == "__main__":

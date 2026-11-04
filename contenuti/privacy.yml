@@ -1,4 +1,4 @@
-# Informativa privacy (pagina privacy.html, in italiano, inglese e francese).
+# Informativa privacy (pagina privacy.html, in italiano, inglese, francese e tedesco).
 # Il testo è HTML semplice: <h2> per i titoli, <p> per i paragrafi, <ul><li> per gli elenchi.
 # Se cambia qualcosa sul sito (un form, video incorporati, statistiche, un altro hosting)
 # questa pagina va aggiornata, insieme alla data qui sotto.
@@ -76,3 +76,27 @@ fr:
     <h2>Vos droits</h2>
     <p>Vous pouvez à tout moment demander l'accès à vos données, leur rectification ou leur effacement, la limitation du traitement, vous opposer au traitement et recevoir vos données dans un format portable (art. 15 à 22 du RGPD), en écrivant à l'adresse e-mail ci-dessus. Vous avez également le droit d'introduire une réclamation auprès d'une autorité de contrôle : en Italie le <a href="https://www.garanteprivacy.it" rel="noopener">Garante per la protezione dei dati personali</a>, en France la <a href="https://www.cnil.fr" rel="noopener">CNIL</a>, ou l'autorité du pays de l'UE où vous résidez.</p>
     <p>Vous n'êtes pas tenu de nous fournir des données : rien n'est nécessaire pour consulter le site. Nous ne procédons à aucune prise de décision automatisée ni à aucun profilage.</p>
+
+de:
+  titolo: Datenschutzerklärung
+  aggiornata: Zuletzt aktualisiert
+  corpo: |
+    <p class="lede">Diese Website verwendet keine Cookies, erhebt keine Statistiken und enthält keine Dienste Dritter. Hier erklären wir, welche wenigen personenbezogenen Daten trotzdem über die Website laufen und wie wir mit ihnen umgehen, wie es die Datenschutz-Grundverordnung (EU) 2016/679 (DSGVO, Art. 13) verlangt.</p>
+
+    <h2>Verantwortliche Stelle</h2>
+    <p>Associazione Culturale DANZ@M.E<br>Via Caronia, 2 · 95024 Acireale (CT), Italien<br>Steuernummer und USt-IdNr. 04082100878<br>E-Mail: <a href="mailto:enricomusmeci@virgilio.it">enricomusmeci@virgilio.it</a></p>
+
+    <h2>Besuch der Website und Hosting</h2>
+    <p>Die Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc. (USA). Wenn Sie eine Seite aufrufen, speichert GitHub die IP-Adresse Ihres Geräts aus Sicherheitsgründen und für den Betrieb des Dienstes. Der Verein hat keinen Zugriff auf diese Daten und nutzt sie nicht.</p>
+    <p>Rechtsgrundlage ist unser berechtigtes Interesse daran, die Website bereitzustellen und zu schützen (Art. 6 Abs. 1 lit. f DSGVO). Die Daten können in die USA übermittelt werden: GitHub nimmt am EU-U.S. Data Privacy Framework teil, für das die Europäische Kommission ein angemessenes Schutzniveau festgestellt hat. Speicherdauer und Garantien sind in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Datenschutzerklärung von GitHub</a> beschrieben.</p>
+
+    <h2>Cookies und Tracking</h2>
+    <p>Die Website setzt keine Cookies, weder technische noch solche zur Profilbildung, und verwendet keine anderen Tracking-Werkzeuge (Statistiken, Pixel, Fingerprinting). Auch die Schriften liegen auf der Website selbst, ohne Anfragen an fremde Server. Deshalb gibt es kein Einwilligungsbanner.</p>
+    <p>In der Fußzeile stehen Links zu den Instagram- und Facebook-Profilen von Enrico Musmeci. Es sind einfache Links: Solange Sie sie nicht anklicken, werden keine Daten an diese Websites übertragen. Wenn Sie sie öffnen, gilt die Datenschutzerklärung von Meta Platforms, das beide Dienste betreibt.</p>
+
+    <h2>Wenn Sie uns schreiben</h2>
+    <p>Wenn Sie uns an die oben genannte E-Mail-Adresse schreiben, verwenden wir die Daten, die Sie uns mitteilen (Name, Kontaktdaten, Inhalt der Nachricht), nur, um Ihnen zu antworten und, wenn Sie sich nach Vorstellungen, Workshops oder anderen Aktivitäten erkundigen, um Ihre Anfrage zu bearbeiten (Art. 6 Abs. 1 lit. b und f DSGVO). Wir geben sie an niemanden weiter und schicken Ihnen keine Nachrichten, um die Sie nicht gebeten haben. Wir bewahren sie so lange auf, wie es für die Bearbeitung Ihrer Anfrage nötig ist, sofern das Gesetz nichts anderes vorschreibt.</p>
+
+    <h2>Ihre Rechte</h2>
+    <p>Sie können jederzeit Auskunft über Ihre Daten verlangen, ihre Berichtigung oder Löschung, die Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung einlegen und Ihre Daten in einem übertragbaren Format erhalten (Art. 15–22 DSGVO). Schreiben Sie dazu an die oben genannte E-Mail-Adresse. Sie haben außerdem das Recht, sich bei einer Aufsichtsbehörde zu beschweren: in Italien beim <a href="https://www.garanteprivacy.it" rel="noopener">Garante per la protezione dei dati personali</a>, in der Schweiz beim <a href="https://www.edoeb.admin.ch" rel="noopener">Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB)</a> oder bei der Behörde des Landes, in dem Sie wohnen.</p>
+    <p>Sie sind nicht verpflichtet, uns Daten zu geben: Zum Besuch der Website ist nichts nötig. Wir nehmen keine automatisierten Entscheidungen und kein Profiling vor.</p>

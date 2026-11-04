@@ -10,8 +10,26 @@ repliche:
 - 9 e 10 gennaio 2027, Theater am Gleis, Winterthur, CH
 in_home: true
 luogo_breve: Sursee
+# Foto di scena: Tanzfestival Sursee, 20 giugno 2026, ph. Roberto Conciatori.
+# 01-08 aggiunte il 4/11/2026; 09-10 sono le prime due caricate (in fondo per scelta di Enrico).
 foto:
 - file: unerwartete-materie-01.jpg
   credito: Roberto Conciatori
 - file: unerwartete-materie-02.jpg
+  credito: Roberto Conciatori
+- file: unerwartete-materie-03.jpg
+  credito: Roberto Conciatori
+- file: unerwartete-materie-04.jpg
+  credito: Roberto Conciatori
+- file: unerwartete-materie-05.jpg
+  credito: Roberto Conciatori
+- file: unerwartete-materie-06.jpg
+  credito: Roberto Conciatori
+- file: unerwartete-materie-07.jpg
+  credito: Roberto Conciatori
+- file: unerwartete-materie-08.jpg
+  credito: Roberto Conciatori
+- file: unerwartete-materie-09.jpg
+  credito: Roberto Conciatori
+- file: unerwartete-materie-10.jpg
   credito: Roberto Conciatori

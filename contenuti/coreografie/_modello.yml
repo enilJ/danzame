@@ -18,6 +18,7 @@ citazioni:
     fonte: Nome del giornale
     traduzione_en: Traduzione inglese (facoltativa)
     traduzione_fr: Traduction française (facultative)
+    traduzione_de: Deutsche Übersetzung (optional)
 note:
   - Una nota libera
 foto:                           # file da caricare in img/coreografie/

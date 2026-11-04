@@ -1,0 +1,111 @@
+# Texte der Startseite auf Deutsch.
+title_suffix: Kulturverein, Acireale
+hero_alt: "PÂTÀPAIN #3 im Teatro Massimo Bellini: Das Ensemble biegt sich vor dem Orchester nach hinten"
+# Bildnachweis oben rechts auf dem Eröffnungsfoto (img/home/apertura.jpg)
+hero_credit: "PÂTÀPAIN #3 · Teatro Massimo Bellini, 2025 · Ph. Serena Nicoletti"
+hero_eyebrow: Kulturverein · Acireale, Sizilien · seit 2003
+hero_h1: Tanz als Kunst in Bewegung, <em>ohne Tricks</em>
+intro_label: Der Verein
+intro_lede: 'DANZ@M.E fördert den Tanz in all seinen Formen in und um Acireale auf Sizilien: <em>Performances</em>, choreografische Residenzen, Camps und Workshops.'
+intro_body: Gegründet wurde der Verein von C. Enrico Musmeci, Träger des Preises Aci &amp; Galatea 1997, nach einer Laufbahn an den Opernhäusern Frankreichs, Italiens und der Schweiz. Seitdem hat er Aufführungen mit Livemusik, urbane Performances und Tanztheater produziert und internationale Austauschprojekte aufgebaut, die jungen Tänzerinnen und Tänzern den Einstieg in den Beruf erleichtern.
+fact_founded: Gründung
+fact_recognised: Anerkennung
+fact_recognised_v: Italienisches Kulturministerium, 2021
+fact_venue: Spielstätte
+feat_eyebrow: Im Fokus · Künstlerische Leitung C. Enrico Musmeci
+feat_tagline: Eine Plattform für Autorenchoreografie. „Was fremd ist, erscheint seltsam.“
+poster_alt: Plakat des Mò.DANCEFEST 2026
+poster_cap: Programm 2026
+feat_p1: Das Mò.DANCEFEST wählt kurze Arbeiten aufstrebender sizilianischer Compagnien des zeitgenössischen Tanzes und sizilianischer Choreografinnen und Choreografen aus, die im Ausland arbeiten, und bringt sie auf die Bühne. Die Stücke sind neu oder überarbeitete Ausschnitte aus jüngeren Choreografien und sollen dem Publikum die Stile und Strömungen des heutigen Tanzes nahebringen.
+feat_p2: Das Festival wird von DANZ@M.E konzipiert und organisiert und findet im vereinseigenen Saal La Pépinière statt. Neben den Abendvorstellungen gibt es Masterclasses, choreografische Labore und Residenzen, die mit einer öffentlichen Präsentation abschließen.
+perf: Vorstellungen
+lab: Labor
+showing: Präsentation der Residenzen
+partners: 'Partner:'
+patronage: Unter der Schirmherrschaft der Stadt Acireale.
+slot_title: Fotos der Ausgabe {anno}
+slot_note: folgen in Kürze
+past_editions: Frühere Ausgaben
+poster_word: Mò.DANCEFEST-Plakat
+recent_h: Neuere Arbeiten
+photo_soon: Fotos folgen
+all_archive: 'Das ganze Archiv: [[n_works]] Arbeiten seit 1991 →'
+portrait_alt: Porträt von C. Enrico Musmeci
+bio_roles: Tänzer · Choreograf · Ballettpädagoge
+bio_p1: Geboren am 4. Juli 1964 in Catania, beginnt er mit neun Jahren in Acireale und Catania mit dem klassischen Ballett. 1983 geht er nach Frankreich, für die zweijährige Berufsausbildung am Centre de Danse International Rosella Hightower in Cannes.
+bio_p2: Es folgen fünfzehn Jahre an Opernhäusern in Frankreich, Italien und der Schweiz. Er tanzt das Repertoire von Petipa, Balanchine, Bournonville und Cranko und arbeitet mit Choreografen wie Uwe Scholz, Peter Schaufuss und John Clifford. In Zürich entstehen seine ersten Choreografien; 1995 gründet er die ORMA Dance Company.
+bio_p3: Seit 1995 arbeitet er mit Roberto Zappalà zusammen. 2010 kehrt er nach Sizilien zurück. Er leitet die Kurse MoDem Pro und die CZD2 bei Scenario Pubblico in Catania und bringt mit DANZ@M.E Workshops, Residenzen und das Mò.DANCEFEST nach Acireale.
+studied_with: Ausbildung bei
+from_archive: Aus dem Archiv
+alb0_alt: Enrico mit neun Jahren an der Stange, rechts, neben drei Schülerinnen im Tutu
+alb0_cap: Mit neun Jahren, die ersten Stunden (rechts)
+alb1_alt: 'Un ballo in maschera am Teatro Regio in Turin: das männliche Corps de ballet in der Arabesque'
+alb1_cap: 'Teatro Regio, Turin: Un ballo in maschera'
+alb2_alt: Enrico im Sprung mit dem Ballett des Stadttheaters Luzern
+alb2_cap: Ballett des Stadttheaters Luzern
+alb3_alt: Enrico in der Arabesque im Ballettsaal des Opernhauses Zürich
+alb3_cap: Opernhaus Zürich, im Ballettsaal
+alb4_alt: Ein Tänzer in einem Kostüm mit Rüschenrock in Corners of the Earth, ORMA Dance Company
+alb4_cap: ORMA Dance Company, Corners of the Earth
+seasons_h: Spielzeiten
+seasons:
+- anno: '1983'
+  luogo: Cannes
+  teatro: Centre Rosella Hightower
+  testo: Zweijährige Berufsausbildung in klassischem und modernem Tanz.
+- anno: '1985'
+  luogo: Nizza · Avignon · Nancy
+  teatro: Opéra de Nice, Opéra d'Avignon, Ballet de Nancy
+  testo: Erste Engagements an französischen Opernballetten.
+- anno: '1986'
+  luogo: Europa · USA
+  teatro: Ballet Théâtre Populaire en Liberté, Ballet de France
+  testo: Europatournee und 1987 eine USA-Tournee mit dem Ballet de France, Paris.
+- anno: '1987'
+  luogo: Turin
+  teatro: Teatro Regio
+  testo: Eine Spielzeit im Corps de ballet.
+- anno: '1988'
+  luogo: Zürich
+  teatro: Ballett des Opernhauses Zürich, Dir. Uwe Scholz
+  testo: Vier Spielzeiten. Ab 1990 entstehen seine ersten Choreografien für das Opernhaus.
+- anno: '1992'
+  luogo: Luzern
+  teatro: Stadttheater
+  testo: Zwei Spielzeiten als Tänzer und Choreograf; 1993 choreografiert er ein Werk mit Orchester.
+- anno: '1995'
+  luogo: Zürich
+  teatro: ORMA Dance Company
+  testo: Gründet und leitet die Compagnie, unterstützt von Stadt und Kanton Zürich. Bis 2000 mehr als zehn Kreationen, auf Tournee in Deutschland, Frankreich, Mauritius, Italien und Liechtenstein.
+- anno: '2010'
+  luogo: Catania · Acireale
+  teatro: Scenario Pubblico, DANZ@M.E
+  testo: Rückkehr nach Sizilien. Seit 2012 pädagogischer Leiter der Kurse MoDem Pro und Leiter der CZD2; Assistent von Roberto Zappalà für Fra Diavolo an der Oper Rom (2017) und am Teatro Massimo in Palermo (2018).
+awards_h: Auszeichnungen
+awards:
+- anno: 1991–94
+  testo: Viermal Finalist beim Internationalen Choreografischen Wettbewerb Hannover
+- anno: '1994'
+  testo: 2. Preis, Genzano di Roma
+- anno: '1995'
+  testo: Finalist beim Prix Volinine, Paris
+- anno: '1997'
+  testo: Preis Aci &amp; Galatea, Acireale
+- anno: '1997'
+  testo: Ausgewählt für das 1. SiWiC, Swiss International Coaching Project for Choreographers
+- anno: '1998'
+  testo: Schweizer Plattform der Rencontres Chorégraphiques Internationales de Seine-Saint-Denis
+stage_with_h: Auf der Bühne mit
+jury_h: Jurytätigkeit
+juries:
+- anno: '2019'
+  testo: Wettbewerb Città di Verona
+- anno: '2021'
+  testo: Internationaler Preis Prospettiva Danza Teatro, Padua
+- anno: '2023'
+  testo: Teatri Riflessi, Zafferana Etnea
+- anno: 2023–26
+  testo: Vorstand von InciDanse, Fribourg
+f_venue: Spielstätte
+italy: Italien
+footer_mic: Anerkannt vom italienischen Kulturministerium

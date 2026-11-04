@@ -1,13 +1,13 @@
-"""Testi fissi dell'interfaccia in italiano, inglese e francese, e traduzione automatica
-di date e formule ricorrenti nelle schede delle coreografie.
+"""Testi fissi dell'interfaccia in italiano, inglese, francese e tedesco, e traduzione
+automatica di date e formule ricorrenti nelle schede delle coreografie.
 
-L'italiano è la lingua di partenza. Le traduzioni inglese e francese
-vanno fatte rileggere (idealmente da Enrico) prima di andare online.
+L'italiano è la lingua di partenza. Le traduzioni vanno fatte rileggere
+(idealmente da Enrico, il tedesco da qualcuno di madrelingua) prima di andare online.
 """
 import re
 
-LANGS = ["it", "en", "fr"]
-LANG_NAMES = {"it": "Italiano", "en": "English", "fr": "Français"}
+LANGS = ["it", "en", "fr", "de"]
+LANG_NAMES = {"it": "Italiano", "en": "English", "fr": "Français", "de": "Deutsch"}
 
 # ---------------------------------------------------------------------------
 # Interfaccia comune (menu, piè di pagina)
@@ -16,7 +16,7 @@ COMMON = {
     "it": {
         "nav_works": "Coreografie", "nav_fest": "Mò.DANCEFEST", "nav_bio": "Biografia", "nav_contact": "Contatti",
         "nav_label": "Principale", "lang_label": "Lingua",
-        "motto": "Danza come arte in movimento, senza trucco.",
+        "motto": "Danza come arte in movimento, senza trucchi.",
         "footer_assoc": "Associazione Culturale DANZ@M.E · Acireale",
         "footer_legal": "C.F. e P.IVA 04082100878", "nav_privacy": "Privacy",
         "choreo_by": "Coreografia",
@@ -24,7 +24,7 @@ COMMON = {
     "en": {
         "nav_works": "Works", "nav_fest": "Mò.DANCEFEST", "nav_bio": "Biography", "nav_contact": "Contact",
         "nav_label": "Main", "lang_label": "Language",
-        "motto": "Dance as art in motion, without make-up.",
+        "motto": "Dance as art in motion, without tricks.",
         "footer_assoc": "DANZ@M.E Cultural Association · Acireale",
         "footer_legal": "Tax code and VAT no. 04082100878", "nav_privacy": "Privacy",
         "choreo_by": "Choreography",
@@ -32,10 +32,18 @@ COMMON = {
     "fr": {
         "nav_works": "Chorégraphies", "nav_fest": "Mò.DANCEFEST", "nav_bio": "Biographie", "nav_contact": "Contact",
         "nav_label": "Principal", "lang_label": "Langue",
-        "motto": "La danse comme art en mouvement, sans maquillage.",
+        "motto": "La danse comme art en mouvement, sans trucs.",
         "footer_assoc": "Association culturelle DANZ@M.E · Acireale",
         "footer_legal": "Code fiscal et n° de TVA 04082100878", "nav_privacy": "Confidentialité",
         "choreo_by": "Chorégraphie",
+    },
+    "de": {
+        "nav_works": "Choreografien", "nav_fest": "Mò.DANCEFEST", "nav_bio": "Biografie", "nav_contact": "Kontakt",
+        "nav_label": "Hauptmenü", "lang_label": "Sprache",
+        "motto": "Tanz als Kunst in Bewegung, ohne Tricks.",
+        "footer_assoc": "Kulturverein DANZ@M.E · Acireale",
+        "footer_legal": "Steuernummer und USt-IdNr. 04082100878", "nav_privacy": "Datenschutz",
+        "choreo_by": "Choreografie",
     },
 }
 
@@ -127,6 +135,34 @@ WORKS_UI = {
              "note": "Les premières chorégraphies à l'Opernhaus de Zurich et au Stadttheater de Lucerne, puis l'ORMA Dance Company."},
         ],
     },
+    "de": {
+        "page_title": "Choreografien", "eyebrow": "Archiv", "h1": "Choreografien",
+        "places": {"Svizzera": "Schweiz", "Sicilia": "Sizilien", "Altrove": "Anderswo"},
+        "in_place": {"Svizzera": "in der Schweiz", "Sicilia": "in Sizilien", "Altrove": "anderswo"},
+        "works_word": "Arbeiten",
+        "legend_note": "Uraufführungen pro Jahr. Tippen Sie auf einen Balken, um zu diesem Jahr zu springen.",
+        "premiere_one": "Uraufführung", "premiere_many": "Uraufführungen",
+        "return_note": "2010 · Rückkehr nach Sizilien",
+        "f_period": "Zeitraum", "f_place": "Ort", "all": "Alle", "everywhere": "Überall",
+        "search": "Suchen", "search_ph": "Titel, Compagnie, Musik suchen…",
+        "empty": "Keine Arbeit entspricht der Suche.",
+        "back": "← Alle Choreografien",
+        "k_preview": "Voraufführung", "k_premiere": "Uraufführung", "k_cast": "Besetzung", "k_for": "Für",
+        "k_company": "Compagnie", "k_music": "Musik",
+        "press": "Pressestimmen", "reruns": "Weitere Vorstellungen", "upcoming": "Nächste Termine", "notes": "Anmerkungen",
+        "photo": "Fotos", "enlarge": "Foto {k} von {n} vergrößern", "photo_alt": "{t}, Foto {k}",
+        "close": "Schließen", "pager": "Im Archiv blättern",
+        "decades": [
+            {"id": "2020", "a": "Die", "b": "2020er", "chip": "2020er",
+             "note": "Kreationen für MoDem PRO und CZD2 in Catania und Projekte mit Schweizer Jugendensembles."},
+            {"id": "2010", "a": "Die", "b": "2010er", "chip": "2010er",
+             "note": "Die Rückkehr nach Sizilien und der Beginn des Muddica-Zyklus bei Scenario Pubblico."},
+            {"id": "2000", "a": "Die", "b": "2000er", "chip": "2000er",
+             "note": "Zwischen der Schweiz und Sizilien: DANZ@M.E, die Duette mit Daniela Campione, die Cinevox Dance Company."},
+            {"id": "1990", "a": "Die", "b": "90er", "chip": "90er",
+             "note": "Erste Choreografien am Opernhaus Zürich und am Stadttheater Luzern, dann die ORMA Dance Company."},
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -139,6 +175,8 @@ MONTHS = {
            "August", "September", "October", "November", "December"],
     "fr": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
            "août", "septembre", "octobre", "novembre", "décembre"],
+    "de": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli",
+           "August", "September", "Oktober", "November", "Dezember"],
 }
 
 # Formule ricorrenti; l'ordine conta (le più lunghe prima).
@@ -195,7 +233,37 @@ PHRASES = {
         ("pianoforte:", "piano :"), (" e ", " et "),
         ("direttore d'orchestra", "direction"), ("ensemble del conservatorio", "ensemble du conservatoire"),
     ],
+    "de": [
+        ("Coreografo, regista e interprete, Assolo con Nello Toscano al violoncello",
+         "Choreograf, Regisseur und Interpret; Solo mit Nello Toscano am Violoncello"),
+        ("Solo con Claudia Fichera performer", "Solo mit der Performerin Claudia Fichera"),
+        ("partecipazione coreografica", "choreografische Mitwirkung"),
+        ("Partecipazione coreografica", "Choreografische Mitwirkung"),
+        ("danzatori con orchestra", "Tänzerinnen und Tänzer mit Orchester"),
+        ("Duo con ", "Duo mit "), ("danzatori", "Tänzerinnen und Tänzer"),
+        ("Giovani coreografi", "Junge Choreografen"),
+        ("OPERNHAUS DI ZURIGO", "OPERNHAUS ZÜRICH"),
+        ("Tour Mauritius per Le Ballet de Lucerne", "Mauritius-Tournee mit Le Ballet de Lucerne"),
+        ("Tour in Sicilia", "Sizilien-Tournee"), ("Tour Sicilia", "Sizilien-Tournee"),
+        ("Tour Mauritius", "Mauritius-Tournee"),
+        ("Finalista al Prix Volinine, 1995 Parigi", "Finalist beim Prix Volinine, Paris 1995"),
+        ("Finalista Wettbewerb Internationalen", "Finalist, Internationaler Wettbewerb"),
+        ("2° Premio Genzano di Roma", "2. Preis, Genzano di Roma"),
+        ("Versione rivisitata: 8 Tänzerinnen und Tänzer", "Überarbeitete Fassung: 8 Tänzerinnen und Tänzer"),
+        ("Per la Schweizer kammerballett, 1999:", "Mit dem Schweizer Kammerballett, 1999:"),
+        ("Filippine", "Philippinen"),
+        ("Theaterhaus Gessnerallee per Plate-Forme", "Theaterhaus Gessnerallee für die Plate-Forme"),
+        ("per I DanzAteliers Youth Ensemble", "mit I DanzAteliers Youth Ensemble"),
+        ("Ospite Coreografo", "Gastchoreograf"), ("Guest Coreografo", "Gastchoreograf"),
+        ("Zurigo", "Zürich"), ("Zurich", "Zürich"), ("Parigi", "Paris"), ("Argovia", "Aargau"),
+        ("pianoforte:", "Klavier:"), (" e ", " und "),
+        ("direttore d'orchestra", "Dirigent"), ("ensemble del conservatorio", "Ensemble des Konservatoriums"),
+    ],
 }
+
+# Mesi tedeschi, per aggiungere il punto ai giorni: "20 Juni" -> "20. Juni", "9 und 10 Januar" -> "9. und 10. Januar"
+_MESI_DE = "|".join(MONTHS["de"])
+_GIORNO_DE = re.compile(r"\b(\d{1,2})(?=(?:\s*(?:und|–|-|,|/)\s*\d{1,2})*\s+(?:%s)\b)" % _MESI_DE)
 
 def tr_text(s, lang):
     if lang == "it" or not s:
@@ -205,6 +273,8 @@ def tr_text(s, lang):
         s = re.sub(r"\b%s\b" % m, MONTHS[lang][i], s, flags=re.I)
     for a, b in PHRASES[lang]:
         s = s.replace(a, b)
+    if lang == "de":
+        s = _GIORNO_DE.sub(r"\1.", s)
     return s
 
 
@@ -213,9 +283,10 @@ def tr_work(w, lang):
     for k in ("prima", "anteprima", "organico", "compagnia"):
         w[k] = tr_text(w[k], lang)
     if lang != "it":
-        w["musica"] = w["musica"].replace(" e ", {"en": " and ", "fr": " et "}[lang])
+        w["musica"] = w["musica"].replace(" e ", {"en": " and ", "fr": " et ", "de": " und "}[lang])
     if w["musica"] in ("Live", "mix", "Collage", "collage", "varie"):
-        w["musica"] = {"en": {"varie": "various"}, "fr": {"varie": "divers"}}.get(lang, {}).get(w["musica"], w["musica"])
+        w["musica"] = {"en": {"varie": "various"}, "fr": {"varie": "divers"},
+                       "de": {"varie": "verschiedene"}}.get(lang, {}).get(w["musica"], w["musica"])
     for k in ("repliche", "prossimamente"):
         w[k] = [tr_text(x, lang) for x in w[k]]
     w["citazioni"] = [dict(c, traduzione=c.get("traduzione_" + lang, "") if lang != "it" else "") for c in w.get("citazioni", [])]
