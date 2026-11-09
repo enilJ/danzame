@@ -195,13 +195,16 @@ def selettore_lingua(cur, page):
     links = []
     for l in LANGS:
         attuale = ' aria-current="true"' if l == cur else ""
-        links.append(f'<a href="{r}{cartella(l)}{page}" hreflang="{l}" lang="{l}" title="{LANG_NAMES[l]}"{attuale}>{l}</a>')
+        dest = f"{r}{cartella(l)}{'' if page == 'index.html' else page}" or "./"
+        links.append(f'<a href="{dest}" hreflang="{l}" lang="{l}" title="{LANG_NAMES[l]}"{attuale}>{l}</a>')
     return f'<span class="langs" role="group" aria-label="{COMMON[cur]["lang_label"]}">' + "".join(links) + "</span>"
 
 
-def hreflang(page):
+def hreflang(page, lang):
     p = "" if page == "index.html" else page
-    tags = [f'<link rel="alternate" hreflang="{l}" href="{SITE}{cartella(l)}{p}">' for l in LANGS]
+    # canonical: l'indirizzo ufficiale della pagina (la home è "/", non "/index.html")
+    tags = [f'<link rel="canonical" href="{SITE}{cartella(lang)}{p}">']
+    tags += [f'<link rel="alternate" hreflang="{l}" href="{SITE}{cartella(l)}{p}">' for l in LANGS]
     tags.append(f'<link rel="alternate" hreflang="x-default" href="{SITE}{p}">')
     return "\n".join(tags)
 
@@ -301,7 +304,7 @@ def pagina_home(lang, works, fest):
     days, partners, photos, past = festival_html(fest, lang, t, r)
     values = {**c, **{k: str(v).replace("[[n_works]]", n) for k, v in t.items() if not isinstance(v, (list, dict))},
               "r": r, "social": social_html(), "fonts": font_css(r), "css": (MODELLI / "home.css").read_text(encoding="utf-8"),
-              "hreflang": hreflang("index.html"), "langswitch": selettore_lingua(lang, "index.html"),
+              "hreflang": hreflang("index.html", lang), "langswitch": selettore_lingua(lang, "index.html"),
               "cards": "\n        ".join(cards), "seasons": seasons,
               "awards": righe(t["awards"]), "juries": righe(t["juries"]),
               "fest_edition": ordinale(fest.get("edizione", ""), lang), "fest_dates": L(fest.get("date"), lang),
@@ -328,7 +331,7 @@ def pagina_coreografie(lang, works):
                                   "h": dimensioni.get(f["src"], (0, 0))[1]} for f in w["foto"]]
     T = {**ui, "choreo_by": c["choreo_by"]}
     values = {**c, **{k: v for k, v in ui.items() if isinstance(v, str)}, "lang": lang, "fonts": font_css(r), "social": social_html(),
-              "hreflang": hreflang("coreografie.html"), "langswitch": selettore_lingua(lang, "coreografie.html"),
+              "hreflang": hreflang("coreografie.html", lang), "langswitch": selettore_lingua(lang, "coreografie.html"),
               "pl_sv": ui["places"]["Svizzera"], "pl_si": ui["places"]["Sicilia"], "pl_al": ui["places"]["Altrove"]}
     out = riempi((MODELLI / "coreografie.html").read_text(encoding="utf-8"), values)
     out = (out.replace("/*DATA*/", json.dumps(data, ensure_ascii=False))
@@ -345,7 +348,7 @@ def pagina_privacy(lang):
         return ""
     values = {**COMMON[lang], "lang": lang, "fonts": font_css(prefisso(lang)), "social": social_html(),
               "css": (MODELLI / "home.css").read_text(encoding="utf-8"),
-              "hreflang": hreflang("privacy.html"), "langswitch": selettore_lingua(lang, "privacy.html"),
+              "hreflang": hreflang("privacy.html", lang), "langswitch": selettore_lingua(lang, "privacy.html"),
               "titolo": html.escape(t["titolo"]), "aggiornata": html.escape(t.get("aggiornata", "")),
               "data": html.escape(tr_text(str(p.get("aggiornata", "")), lang)), "corpo": t["corpo"]}
     return riempi((MODELLI / "privacy.html").read_text(encoding="utf-8"), values)
